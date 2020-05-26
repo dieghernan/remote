@@ -1,0 +1,130 @@
+remote_theme: dieghernan/jt
+
+# A. Site Settings
+locale          :   # Fallback "en-US"
+title           :   # Fallback "repository_name" REV
+title_separator :   # Fallback " | "
+subtitle        :   # Fallback github-tagline
+
+
+url             : 
+baseurl         : 
+
+algolia:                                                                
+  application_id: 
+  index_name: 
+
+# Site Author
+author:
+  name    : TESTUSER
+  avatar  : 
+
+# Social Sharing
+twitter:
+  site               :   #Avoid the @
+og_image             :   #Fallback your github avatar
+
+# Disqus ID
+
+disqus_shortname: #Your site id : check your address https://{{ disqus.shortname }}.disqus.com/admin/
+
+# Web tracking using Google
+gtag_id:    # gtag.js configuration Google Tag ID 
+analytics_id:  # analytics.js id. Provided for backward compatibility, better use gtag_id
+# B. Navigations
+
+navbar:
+  brand:
+    title: TEST
+    url: 
+    img: 
+  nav:
+  - title: EMPTY
+    url: /.
+  - title: EMPTY2
+    child:
+    - title: EMPTY3
+      url:  /.
+    - title: EMPTY4
+      url: /.
+
+
+footer:
+  links:
+    - label: "RSS"
+      icon: "fa-rss"
+      url:  https://www.example.com
+
+  
+
+# C. Theme Settings
+# Code highlighter 
+highlight-skin  :      # Fallback "default" #See http://jwarby.github.io/jekyll-pygments-themes for options
+
+# Google Fonts https://fonts.google.com/, add as many as you want
+googlefonts:
+  - url : #'https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap'
+
+  
+
+# Theme and colors
+chulapa-skin: 
+  highlight   :  # Fallback "default" #See http://jwarby.github.io/jekyll-pygments-themes for options
+  theme       :  # Optional predefined skins
+  autothemer  : yes  # Bool: Use autotheming
+  vars        :    
+    chulapa-col: green # Fallback "crimson"
+    font-family-sans-serif: 
+    hero-chulapa-bg-color: 
+    
+#D. Defaults and collections
+
+# Defaults
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+      header_type: "base"
+
+
+# XX. Other settings - no need to modify
+plugins:
+  - jekyll-github-metadata
+  - jekyll-paginate
+  - jekyll-sitemap
+
+# Exclude these files from production site
+exclude:
+  - LICENSE
+  - README.md
+  - Gemfile
+  - vendor
+
+include:
+ - _pages
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+
