@@ -69,7 +69,7 @@ googlefonts:
 # Theme and colors
 chulapa-skin: 
   highlight   :  # Fallback "default" #See http://jwarby.github.io/jekyll-pygments-themes for options
-  theme       : sketchy # Optional predefined skins
+  theme       : twitter-dim # Optional predefined skins
   autothemer  :  # Bool: Use autotheming
   vars        :    
     chulapa-col: # Fallback "crimson"
