@@ -2,8 +2,6 @@
 layout: default
 title: Chulapa on remote
 subtitle: Remote test
-header_type: splash
-header_img: "./assets/img/gallery/david-monje-YwrD58FfX9g-unsplash.jpg"
 ---
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
