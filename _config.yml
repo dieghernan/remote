@@ -70,10 +70,10 @@ googlefonts:
 # Theme and colors
 chulapa-skin: 
   highlight   :  # Fallback "default" #See http://jwarby.github.io/jekyll-pygments-themes for options
-  theme       :  # Optional predefined skins
-  autothemer  : yes  # Bool: Use autotheming
+  theme       : sketchy # Optional predefined skins
+  autothemer  :  # Bool: Use autotheming
   vars        :    
-    chulapa-col: green # Fallback "crimson"
+    chulapa-col: # Fallback "crimson"
     font-family-sans-serif: 
     hero-chulapa-bg-color: 
     
