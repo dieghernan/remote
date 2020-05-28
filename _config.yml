@@ -1,31 +1,35 @@
-remote_theme: dieghernan/jt
+remote_theme: 'dieghernan/jt'
 
 # A. Site Settings
-locale          :   # Fallback "en-US"
-title           :   # Fallback "repository_name" REV
-title_separator :   # Fallback " | "
-subtitle        :   # Fallback github-tagline
+locale          :      # Fallback "en-US"
+title           :  # Fallback "repository_name" REV
+title_separator :      # Fallback " | "
+subtitle        :   
+
 
 url             : 
 baseurl         : 
 
-algolia:                                                                
-  application_id: 
-  index_name: 
+
+  
+  
+search:
+  provider:
+  maxwords: 300
 
 # Site Author
 author:
-  name    : TESTUSER
+  name    : TEST
   avatar  : 
 
 # Social Sharing
 twitter:
   site               :   #Avoid the @
-og_image             :   #Fallback your github avatar
+og_image             : "./assets/img/gallery/david-monje-YwrD58FfX9g-unsplash.jpg"
 
 # Disqus ID
 
-disqus_shortname: #Your site id : check your address https://{{ disqus.shortname }}.disqus.com/admin/
+disqus_shortname: chulapa #Your site id : check your address https://{{ disqus.shortname }}.disqus.com/admin/
 
 # Web tracking using Google
 gtag_id:    # gtag.js configuration Google Tag ID 
@@ -38,22 +42,38 @@ navbar:
     url: 
     img: 
   nav:
-  - title: EMPTY
-    url: /.
-  - title: EMPTY2
+  - title: Showcase
+    url: /bootstrap
+  - title: Second Level
     child:
-    - title: EMPTY3
-      url:  /.
-    - title: EMPTY4
-      url: /.
-
+    - title: Liquid examples
+      url:  /liquid
+    - title: Demos
+      url: /demo
+  - title: Another
+    child:
+    - title: New
+      url: /new
+    - title: External url
+      url: https://www.google.com/
+  - title: Github
+    url: https://github.com/dieghernan
 
 footer:
   links:
     - label: "RSS"
       icon: "fa-rss"
       url:  https://www.example.com
-
+    - label: "Twitter"
+      icon: "fa-twitter"
+      # url:
+    - label: "Facebook"
+      icon: "fa-facebook"
+    - label: "GitHub"
+      icon: "fa-github"
+      # url:
+    - label: "Instagram"
+      icon: "fa-instagram"
   
 
 # C. Theme Settings
@@ -62,7 +82,7 @@ highlight-skin  :      # Fallback "default" #See http://jwarby.github.io/jekyll-
 
 # Google Fonts https://fonts.google.com/, add as many as you want
 googlefonts:
-  - url : #'https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap'
+  - url : 'https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap'
 
   
 
@@ -70,14 +90,15 @@ googlefonts:
 chulapa-skin: 
   highlight   :  # Fallback "default" #See http://jwarby.github.io/jekyll-pygments-themes for options
   theme       : chulapa  # Optional predefined skins
-  autothemer  :  # Bool: Use autotheming
+  autothemer  :   # Bool: Use autotheming
   vars        :    
     chulapa-col: # Fallback "crimson"
-    font-family-sans-serif: 
+    font-family-sans-serif: Roboto, sans-serif
     hero-chulapa-bg-color: 
     
 #D. Defaults and collections
 
+collections_dir: collections
 
 # Defaults
 defaults:
@@ -87,10 +108,25 @@ defaults:
     values:
       layout: "default"
       header_type: "base"
+      include_on_search: false
+  -
+    scope:
+      path: ""
+      type: "demo"
+    values:
+      layout: "default"
+      header_type: "hero"
       show_bottomnavs: true
       show_sociallinks: true
-      date: 2010-04-21
-      show_date: true
+      show_comments:
+      include_on_search: true
+
+
+#Collections
+collections:
+  demo:
+    output: true
+
 
 
 # XX. Other settings - no need to modify
@@ -131,4 +167,3 @@ kramdown:
 sass:
   sass_dir: _sass
   style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
-
