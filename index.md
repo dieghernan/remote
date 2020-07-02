@@ -134,7 +134,7 @@ The final element.
 
 
 {% for item in site.github.releases %}
- - {{ item.url }} this
+ - {{ item.tag_name }} this
  - {{ item[0] }}
  - {{ item }}
 
