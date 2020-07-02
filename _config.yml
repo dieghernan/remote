@@ -1,5 +1,6 @@
 remote_theme: 'dieghernan/jt'
 
+
 # A. Site Settings
 locale          :      # Fallback "en-US"
 title           :  # Fallback "repository_name" REV
