@@ -133,4 +133,4 @@ The final element.
 
 
 
-{{ site.github.releases | inspect  }}
+{{ site.github.releases.url  }}
