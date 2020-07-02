@@ -131,7 +131,7 @@ The final element.
 ```
 
 
-{{ site.github.releases.tag_name }}
+{{ site.github.releases | map: "tag_name" | first  }}
 
 {% for item in site.github.releases %}
  - {{ item.tag_name }} this
