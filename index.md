@@ -133,4 +133,6 @@ The final element.
 
 
 
-{{ site.github.releases[url]  }}
+{% for item in site.github.releases %}
+ - {{ item }}
+{% endfor %}
