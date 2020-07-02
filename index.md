@@ -131,7 +131,7 @@ The final element.
 ```
 
 
-
+{{ site.github.releases.tag_name }}
 
 {% for item in site.github.releases %}
  - {{ item.tag_name }} this
