@@ -133,4 +133,4 @@ The final element.
 
 
 
-{{ site.github }}
+{{ site.github.latest_release }}
