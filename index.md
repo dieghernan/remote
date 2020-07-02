@@ -133,4 +133,4 @@ The final element.
 
 
 
-{{ site.github.releases.tag_name }}
+{{ site.github.releases | inspect  }}
