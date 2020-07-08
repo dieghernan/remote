@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Chulapa on remote
+header_type: hero
 subtitle: Remote test
 ---
 
