@@ -91,7 +91,7 @@ googlefonts:
 # Theme and colors
 chulapa-skin: 
   highlight   :  # Fallback "default" #See http://jwarby.github.io/jekyll-pygments-themes for options
-  theme       : twitter   # Optional predefined skins
+  theme       :   # Optional predefined skins
   autothemer  :   # Bool: Use autotheming
   vars        :
     font-family-base: Muli
