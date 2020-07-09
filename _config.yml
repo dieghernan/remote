@@ -79,37 +79,20 @@ footer:
 
 # C. Theme Settings
 # Code highlighter 
-highlight-skin  :      # Fallback "default" #See http://jwarby.github.io/jekyll-pygments-themes for options
 
-# Google Fonts https://fonts.google.com/, add as many as you want
-googlefonts:
- - url: https://fonts.googleapis.com/css?family=Muli:200,300,400,700
- - url: https://fonts.googleapis.com/css?family=Oswald:200,300,400,700
+googlefonts: 
+ - url: "https://fonts.googleapis.com/css?family=Voltaire:200,300,400,700"
 
-  
-
-# Theme and colors
 chulapa-skin: 
-  highlight   :  # Fallback "default" #See http://jwarby.github.io/jekyll-pygments-themes for options
-  theme       :   # Optional predefined skins
-  autothemer  :   # Bool: Use autotheming
-  vars        :
-    font-family-base: Muli
-    headings-font-family: Oswald
-    primary: "#2f3c48"
-    secondary: "#6f7f8c"
-    success: "#3e4d59"
-    danger: "#cc330d"
-    info: "#5c8f94"
-    warning: "#6e9fa5"
-    light: "#eceeec"
-    dark: "#1e2b37"
-    enable-rounded: false
-    link-color: "mix($primary, #007bff, 70%)"
-    hero-chulapa-bg-color: "$primary"
-    navbar-chulapa-toggler-color: "rgba(white, 0.4)"
-    navbar-chulapa-toggler-border-color: "rgba(white, 0.1)"
-    navbar-chulapa-toggler-color-bg: "transparent"
+  vars  :
+    primary: "#2F414A"
+    secondary: "#F47B53"
+    success: "#420084"
+    danger: "#f2460d"
+    info: "#7ebcfa"
+    warning: "#ff9933"
+    light: "#eef0f2"
+    dark: "#000633"
     
 #D. Defaults and collections
 
