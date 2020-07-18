@@ -64,7 +64,7 @@ footer:
   links:
     - label: "RSS"
       icon: "fa-rss"
-      url:  https://www.example.com
+      url:  ./rss.xml
     - label: "Twitter"
       icon: "fa-twitter"
       # url:
