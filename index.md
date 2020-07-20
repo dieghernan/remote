@@ -72,24 +72,7 @@ var fun = function lang(l) {
   dateformat.i18n = require('./lang/' + l)
   return true;
 }
-
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-
-```html
-#HTML code syntax highlighter
-<!DOCTYPE html>
-<html>
-<body>
-
-<p>This is a paragraph.</p>
-<p>This is another paragraph.</p>
-
-</body>
-</html>
+```
 ```
 
 
@@ -100,27 +83,6 @@ var fun = function lang(l) {
   return true;
 }
 ```
-
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
-
-```html
-#HTML code syntax highlighter
-<!DOCTYPE html>
-<html>
-<body>
-
-<p>This is a paragraph.</p>
-<p>This is another paragraph.</p>
-
-</body>
-</html>
-```
-
 
 
 
