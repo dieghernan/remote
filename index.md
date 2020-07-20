@@ -78,7 +78,6 @@ var fun = function lang(l) {
 GitHubPages::Dependencies.gems.each do |gem, version|
   s.add_dependency(gem, "= #{version}")
 end
-```
 
 ```html
 #HTML code syntax highlighter
