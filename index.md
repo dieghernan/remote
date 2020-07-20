@@ -123,18 +123,59 @@ end
 </html>
 ```
 
+```markdown
+* This is an unordered list.
+* This is an unordered list.
+* This is an unordered list.
 
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
 
-##### Header 5
+1. This is an ordered list.
+2. This is an ordered list.
+3. This is an ordered list.
+  * Unordered sub-list.
+  * Unordered sub-list. 
+1. Actual numbers don't matter, just that it's a number
+  1. Ordered sub-list
+4. And another item.
 
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
+  You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces.
 
-###### Header 6
+* Unordered list can use asterisks
+- Or minuses
+  - Minus
+  - Minus
+    1. One
+    2. Two
++ Or pluses
+```
+
+* This is an unordered list.
+* This is an unordered list.
+* This is an unordered list.
+
+
+1. This is an ordered list.
+2. This is an ordered list.
+3. This is an ordered list.
+  * Unordered sub-list.
+  * Unordered sub-list. 
+1. Actual numbers don't matter, just that it's a number
+  1. Ordered sub-list
+4. And another item.
+
+  You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces.
+
+* Unordered list can use asterisks
+- Or minuses
+  - Minus
+  - Minus
+    1. One
+    2. Two
++ Or pluses
+
+
+
+
 
 | head1        | head two          | three |
 |:-------------|:------------------|:------|
