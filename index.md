@@ -5,6 +5,10 @@ header_type: hero
 subtitle: Remote test
 ---
 
+```markdown
+Text can be **bold**, _italic_, or ~~strikethrough~~.
+```
+
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
 [Link to another page](./another-page.html).
@@ -131,12 +135,3 @@ Long, single-line code blocks should not wrap. They should horizontally scroll i
 The final element.
 ```
 
-
-{{ site.github.releases | map: "tag_name" | first  }}
-
-{% for item in site.github.releases %}
- - {{ item.tag_name }} this
- - {{ item[0] }}
- - {{ item }}
-
-{% endfor %}
