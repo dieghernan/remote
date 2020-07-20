@@ -153,25 +153,33 @@ end
 * This is an unordered list.
 * This is an unordered list.
 
+An a two-level ordered list:
 
-1. This is an ordered list.
-2. This is an ordered list.
-3. This is an ordered list.
-  * Unordered sub-list.
-  * Unordered sub-list. 
-1. Actual numbers don't matter, just that it's a number
-  1. Ordered sub-list
-4. And another item.
+1.  This is an ordered list.
+2.  This is an ordered list.
+3.  This is an ordered list.
+    * Unordered sub-list.
+    * Unordered sub-list. 
+12. Actual numbers don't matter, just that it's a numbet or not.
+    1. Ordered sub-list
+4.  And another item.
 
-  You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces.
+    You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces.
 
-* Unordered list can use asterisks
+    > with a blockquote
+
+    # And a header
+    
+Unordered list can use asterisks:
+
+* Like this
 - Or minuses
-  - Minus
-  - Minus
-    1. One
-    2. Two
-+ Or pluses
+   -  Minus
+   -  Minus
+      1. One
+      2. Two
+         + Or pluses
+         + Another
 
 
 
