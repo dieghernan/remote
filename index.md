@@ -128,25 +128,27 @@ end
 * This is an unordered list.
 * This is an unordered list.
 
+An a two-level ordered list:
 
-1. This is an ordered list.
-2. This is an ordered list.
-3. This is an ordered list.
-  * Unordered sub-list.
-  * Unordered sub-list. 
-1. Actual numbers don't matter, just that it's a number
-  1. Ordered sub-list
-4. And another item.
+1.  This is an ordered list.
+2.  This is an ordered list.
+    * Unordered sub-list.
+    * Unordered sub-list. 
+12. Actual numbers don't matter, just that it's a numbet or not.
+4.  And another item.
 
-  You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces.
+    You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces.
 
-* Unordered list can use asterisks
+    # And a header
+    
+Unordered list can use asterisks:
+
+* Like this
 - Or minuses
-  - Minus
-  - Minus
-    1. One
-    2. Two
-+ Or pluses
+   -  Minus
+      1. One
+      2. Two
+         + Or pluses
 ```
 
 * This is an unordered list.
@@ -157,16 +159,12 @@ An a two-level ordered list:
 
 1.  This is an ordered list.
 2.  This is an ordered list.
-3.  This is an ordered list.
     * Unordered sub-list.
     * Unordered sub-list. 
 12. Actual numbers don't matter, just that it's a numbet or not.
-    1. Ordered sub-list
 4.  And another item.
 
     You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces.
-
-    > with a blockquote
 
     # And a header
     
@@ -175,12 +173,9 @@ Unordered list can use asterisks:
 * Like this
 - Or minuses
    -  Minus
-   -  Minus
       1. One
       2. Two
          + Or pluses
-         + Another
-
 
 
 
@@ -196,41 +191,13 @@ Unordered list can use asterisks:
 
 * * *
 
-### Here is an unordered list:
 
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
 
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
+**Small image**
 
 ![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
 
-### Large image
+**Large image**
 
 ![Branching](https://guides.github.com/activities/hello-world/branching.png)
 
