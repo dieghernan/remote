@@ -60,22 +60,12 @@ and this paragraph.
 > When something is important enough, you do it even if the odds are not in your favor.
 ```
 
-> This is a blockquote following a header.
+> This is a blockquote.
 >
 > When something is important enough, you do it even if the odds are not in your favor.
 
 
-```markdown
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
-```
-
-
+~~~ markdown
 ```js
 // Javascript code with syntax highlighting.
 var fun = function lang(l) {
@@ -84,6 +74,54 @@ var fun = function lang(l) {
 }
 ```
 
+```ruby
+# Ruby code with syntax highlighting
+GitHubPages::Dependencies.gems.each do |gem, version|
+  s.add_dependency(gem, "= #{version}")
+end
+```
+
+```html
+#HTML code syntax highlighter
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+
+</body>
+</html>
+```
+~~~
+
+```js
+// Javascript code with syntax highlighting.
+var fun = function lang(l) {
+  dateformat.i18n = require('./lang/' + l)
+  return true;
+}
+```
+
+```ruby
+# Ruby code with syntax highlighting
+GitHubPages::Dependencies.gems.each do |gem, version|
+  s.add_dependency(gem, "= #{version}")
+end
+```
+
+```html
+#HTML code syntax highlighter
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+
+</body>
+</html>
+```
 
 
 *   This is an unordered list following a header.
