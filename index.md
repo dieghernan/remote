@@ -11,23 +11,89 @@ Text can be **bold**, _italic_, or ~~strikethrough~~.
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
+```markdown
+[Link to another page](./another-page.html).
+```
+
 [Link to another page](./another-page.html).
 
-There should be whitespace between paragraphs.
+```markdown
+There should be whitespace between this paragraph
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+and this paragraph.
+```
+
+There should be whitespace between this paragraph
+
+and this paragraph.
+
+```markdown
+# Header 1
+
+## Header 2
+
+### Header 3
+
+#### Header 4
+
+##### Header 5
+
+###### Header 6
+```
 
 # Header 1
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
-
 ## Header 2
+
+### Header 3
+
+#### Header 4
+
+##### Header 5
+
+###### Header 6
+
+
+```markdown
+> This is a blockquote following a header.
+>
+> When something is important enough, you do it even if the odds are not in your favor.
+```
 
 > This is a blockquote following a header.
 >
 > When something is important enough, you do it even if the odds are not in your favor.
 
-### Header 3
+
+```markdown
+```js
+// Javascript code with syntax highlighting.
+var fun = function lang(l) {
+  dateformat.i18n = require('./lang/' + l)
+  return true;
+}
+```
+
+```ruby
+# Ruby code with syntax highlighting
+GitHubPages::Dependencies.gems.each do |gem, version|
+  s.add_dependency(gem, "= #{version}")
+end
+```
+
+```html
+#HTML code syntax highlighter
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+
+</body>
+</html>
+```
+```
 
 ```js
 // Javascript code with syntax highlighting.
@@ -44,13 +110,21 @@ GitHubPages::Dependencies.gems.each do |gem, version|
 end
 ```
 
-```r
-# R code syntax highlighter
-library("example")
-foo <- bar(x = 1, c= "ss", add=TRUE)
+```html
+#HTML code syntax highlighter
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+
+</body>
+</html>
 ```
 
-#### Header 4
+
+
 
 *   This is an unordered list following a header.
 *   This is an unordered list following a header.
