@@ -235,15 +235,23 @@ Here's a simple footnote,[^1] and here's a longer one.[^bignote]
 
     Add as many paragraphs as you like.
 
+```markdown
+
+| Tables   |      Are      |  Cool | Long description                                                                               |
+|----------|:-------------:|------:|------------------------------------------------------------------------------------------------|
+| col 1 is |  left-aligned | $1600 | Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit... |
+| col 2 is |    centered   |   $12 | Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit... |
+| col 3 is | right-aligned |    $1 | Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit... |
+
+```
+
+| Tables   |      Are      |  Cool | Long description                                                                               |
+|----------|:-------------:|------:|------------------------------------------------------------------------------------------------|
+| col 1 is |  left-aligned | $1600 | Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit... |
+| col 2 is |    centered   |   $12 | Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit... |
+| col 3 is | right-aligned |    $1 | Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit... |
 
 
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
 
 ### There's a horizontal rule below this.
 
