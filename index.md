@@ -149,6 +149,12 @@ Unordered list can use asterisks:
       1. One
       2. Two
          + Or pluses
+         
+And a task list:
+
+- [x] This is a complete item
+- [ ] This is an incomplete item
+
 ```
 
 * This is an unordered list.
@@ -176,6 +182,58 @@ Unordered list can use asterisks:
       1. One
       2. Two
          + Or pluses
+
+And a task list:
+
+- [x] This is a complete item
+- [ ] This is an incomplete item
+
+```markdown
+
+Use an emoji here: 👍🏻⭐️🏆
+
+```
+
+Use an emoji here: 👍🏻⭐️🏆
+
+```markdown
+To quickly turn a URL or email address into a link, enclose it in angle brackets.
+
+<https://www.markdownguide.org>
+<fake@example.com>
+
+```
+
+To quickly turn a URL or email address into a link, enclose it in angle brackets.
+
+<https://www.markdownguide.org>
+<fake@example.com>
+
+```markdown
+Here's a simple footnote,[^1] and here's a longer one.[^bignote]
+
+[^1]: This is the first footnote.
+
+[^bignote]: Here's one with multiple paragraphs and code.
+
+    Indent paragraphs to include them in the footnote.
+
+    `{ my code }`
+
+    Add as many paragraphs as you like.
+```
+
+Here's a simple footnote,[^1] and here's a longer one.[^bignote]
+
+[^1]: This is the first footnote.
+
+[^bignote]: Here's one with multiple paragraphs and code.
+
+    Indent paragraphs to include them in the footnote.
+
+    `{ my code }`
+
+    Add as many paragraphs as you like.
 
 
 
