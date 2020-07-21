@@ -82,7 +82,7 @@ end
 ```
 
 ```html
-#HTML code syntax highlighter
+<!--HTML code syntax highlighter-->
 <!DOCTYPE html>
 <html>
 <body>
@@ -111,7 +111,7 @@ end
 ```
 
 ```html
-#HTML code syntax highlighter
+<!--HTML code syntax highlighter-->
 <!DOCTYPE html>
 <html>
 <body>
