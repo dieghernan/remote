@@ -240,28 +240,54 @@ Here's a simple footnote,[^1] and here's a longer one.[^bignote]
 
 ```markdown
 
-| ISO_3166_1 | ISO_3166_2 | ISO_3166_3 | ISO_Official | FIPS_GEC | STANAG | M49 | NUTS | geonameId | continentcode | regioncode | interregioncode | subregioncode | currency | independent | sovstatus  | ISO_3166_3.sov | NAME.EN       | CONTINENT.EN | REGION.EN | INTERREGION.EN | SUBREGION.EN    | CAPITAL.EN | NAME.ES     | CONTINENT.ES | REGION.ES | INTERREGION.ES | SUBREGION.ES         | CAPITAL.ES | pop      | area_km2  | Developed  |
-|------------|:----------:|-----------:|--------------|----------|--------|-----|------|-----------|---------------|------------|-----------------|---------------|----------|-------------|------------|----------------|---------------|--------------|-----------|----------------|-----------------|------------|-------------|--------------|-----------|----------------|----------------------|------------|----------|-----------|------------|
-| 4          | AF         | AFG        | TRUE         | AF       | AFG    | 004 |      | 1149361   | AS            | 142        |                 | 034           | AFN      | TRUE        |            |                | Afghanistan   | Asia         | Asia      |                | Southern Asia   | Kabul      | Afganistán  | Asia         | Asia      |                | Asia meridional      | Kabul      | 29121286 | 647500.0  | Developing |
-| 248        | AX         | ALA        | TRUE         |          |        | 248 |      | 661882    | EU            | 150        |                 | 154           | EUR      | FALSE       | Part of FI | FIN            | Åland Islands | Europe       | Europe    |                | Northern Europe | Mariehamn  | Islas Åland | Europa       | Europa    |                | Europa septentrional | Mariehamn  | 26711    | 1580.0    | Developed  |
-| 8          | AL         | ALB        | TRUE         | AL       | ALB    | 008 | AL   | 783754    | EU            | 150        |                 | 039           | ALL      | TRUE        |            |                | Albania       | Europe       | Europe    |                | Southern Europe | Tirana     | Albania     | Europa       | Europa    |                | Europa meridional    | Tirana     | 2986952  | 28748.0   | Developed  |
-| 12         | DZ         | DZA        | TRUE         | AG       | DZA    | 012 |      | 2589581   | AF            | 002        |                 | 015           | DZD      | TRUE        |            |                | Algeria       | Africa       | Africa    |                | Northern Africa | Algiers    | Argelia     | África       | África    |                | África septentrional | Argel      | 34586184 | 2381740.0 | Developing |
+A table
+
+| **id** | **name** | **age** | **gender** |
+|:-------|:--------:|--------:|:----------:|
+| Left   | Center   | Right   | M          |
+| 2      | Oliver   | 25      | M          |
+| 3      | Shayna   | 18      | F          |
+| 4      | Fechin   | 18      | M          |
 
 ```
 
-| ISO_3166_1 | ISO_3166_2 | ISO_3166_3 | ISO_Official | FIPS_GEC | STANAG | M49 | NUTS | geonameId | continentcode | regioncode | interregioncode | subregioncode | currency | independent | sovstatus  | ISO_3166_3.sov | NAME.EN       | CONTINENT.EN | REGION.EN | INTERREGION.EN | SUBREGION.EN    | CAPITAL.EN | NAME.ES     | CONTINENT.ES | REGION.ES | INTERREGION.ES | SUBREGION.ES         | CAPITAL.ES | pop      | area_km2  | Developed  |
-|------------|:----------:|-----------:|--------------|----------|--------|-----|------|-----------|---------------|------------|-----------------|---------------|----------|-------------|------------|----------------|---------------|--------------|-----------|----------------|-----------------|------------|-------------|--------------|-----------|----------------|----------------------|------------|----------|-----------|------------|
-| 4          | AF         | AFG        | TRUE         | AF       | AFG    | 004 |      | 1149361   | AS            | 142        |                 | 034           | AFN      | TRUE        |            |                | Afghanistan   | Asia         | Asia      |                | Southern Asia   | Kabul      | Afganistán  | Asia         | Asia      |                | Asia meridional      | Kabul      | 29121286 | 647500.0  | Developing |
-| 248        | AX         | ALA        | TRUE         |          |        | 248 |      | 661882    | EU            | 150        |                 | 154           | EUR      | FALSE       | Part of FI | FIN            | Åland Islands | Europe       | Europe    |                | Northern Europe | Mariehamn  | Islas Åland | Europa       | Europa    |                | Europa septentrional | Mariehamn  | 26711    | 1580.0    | Developed  |
-| 8          | AL         | ALB        | TRUE         | AL       | ALB    | 008 | AL   | 783754    | EU            | 150        |                 | 039           | ALL      | TRUE        |            |                | Albania       | Europe       | Europe    |                | Southern Europe | Tirana     | Albania     | Europa       | Europa    |                | Europa meridional    | Tirana     | 2986952  | 28748.0   | Developed  |
-| 12         | DZ         | DZA        | TRUE         | AG       | DZA    | 012 |      | 2589581   | AF            | 002        |                 | 015           | DZD      | TRUE        |            |                | Algeria       | Africa       | Africa    |                | Northern Africa | Algiers    | Argelia     | África       | África    |                | África septentrional | Argel      | 34586184 | 2381740.0 | Developing |
+A table
+
+| **id** | **name** | **age** | **gender** |
+|:-------|:--------:|--------:|:----------:|
+| Left   | Center   | Right   | M          |
+| 2      | Oliver   | 25      | M          |
+| 3      | Shayna   | 18      | F          |
+| 4      | Fechin   | 18      | M          |
 
 
-
-### There's a horizontal rule below this.
+```markdown
+There's a horizontal rule below this.
 
 * * *
 
+Another
+
+---
+```
+
+There's a horizontal rule below this.
+
+* * *
+
+Another
+
+---
+
+```markdown
+**Small image**
+
+![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
+
+**Large image**
+
+![Branching](https://guides.github.com/activities/hello-world/branching.png)
+```
 
 
 **Small image**
@@ -275,6 +301,20 @@ Here's a simple footnote,[^1] and here's a longer one.[^bignote]
 
 ### Definition lists can be used with HTML syntax.
 
+```html
+<dl>
+<dt>Name</dt>
+<dd>Godzilla</dd>
+<dt>Born</dt>
+<dd>1952</dd>
+<dt>Birthplace</dt>
+<dd>Japan</dd>
+<dt>Color</dt>
+<dd>Green</dd>
+</dl>
+```
+
+
 <dl>
 <dt>Name</dt>
 <dd>Godzilla</dd>
@@ -286,11 +326,10 @@ Here's a simple footnote,[^1] and here's a longer one.[^bignote]
 <dd>Green</dd>
 </dl>
 
+
+
 ```
 Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
 ```
 
-```
-The final element.
-```
 
