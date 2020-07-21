@@ -163,6 +163,7 @@ kramdown:
   hard_wrap: false
   auto_ids: true
   footnote_nr: 1
+  footnote_backlink: '&uarr;'
   entity_output: as_char
   toc_levels: 1..6
   smart_quotes: lsquo,rsquo,ldquo,rdquo
@@ -172,6 +173,3 @@ kramdown:
 sass:
   sass_dir: _sass
   style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
- 
-  
-  
