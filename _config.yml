@@ -38,7 +38,7 @@ analytics_id:  # analytics.js id. Provided for backward compatibility, better us
 # B. Navigations
 
 navbar:
-  expand: 0
+  expand: 
   brand:
     title: TEST
     url: 
