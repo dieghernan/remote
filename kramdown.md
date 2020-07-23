@@ -170,7 +170,7 @@ A [link](http://kramdown.gettalong.org "hp")
 to the homepage.
 
 A simple info alert **check it out!**
-{: .alert .alert-warning .p-3 .mx-2 mb-3}
+{: .alert .alert-info .p-3 .mx-2 mb-3}
 
 This is a text with a
 footnote[^1].
