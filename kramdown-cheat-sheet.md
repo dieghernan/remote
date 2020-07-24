@@ -1,5 +1,5 @@
 ---
-title: Kramdown example
+title: Kramdown cheatsheet
 subtitle: Beyond markdown
 excerpt: A demo page checking kramdown
 permalink: /kramdown
