@@ -19,9 +19,9 @@ timezone                :     #"Europe/Madrid ,see https://jekyllrb.com/docs/con
 og_image                :     #default[author.avatar (see below)] or [github-avatar]
 twitter_site            :     #Avoid @
 author:
-  name                  :     # Name Surname Company
+  name                  :  Your Name   # Name Surname Company
   avatar                :     # Try a square file. Info: Your github avatar on https://github.com/[USERNAME].png
-  location              :     # New York, USA 
+  location              :  Fake location   # New York, USA 
   links:                
     - url:  #A link or email: https://twitter.com/jack, mail@example.com
       icon: # A Fontawesome 5 code: fab fa-twitter - see https://fontawesome.com/
@@ -90,18 +90,20 @@ navbar:
   style     :  #default is the classical top navbar, set "modern" for a fixed button navbar
   expand    :  # At which device size expand the navbar menu. default[md] https://getbootstrap.com/docs/4.5/layout/overview/
   brand:
-    title   :  # Title in navbar
+    title   :  Home # Title in navbar
     url     :  # default["url/baseurl"]
     img     :  # An small image, try 30x30px
   nav:
-  - title   : # Label
-    url     : # url	
-  - title   : # Label submenu		
-    child:		
-     - title: # Child label		
-       url  : # child url	
-     - title: # Child label		
-       url  : # child url	
+  - title   : Blog # Label
+    url     : /blog/ # url	
+  - title   : Cheatsheets
+    url     : /pages/cheatsheet
+#  - title   : # Label submenu
+#    child:		
+#    - title: # Child label		
+#      url  : # child url	
+#    - title: # Child label		
+#      url  : # child url	
 
 #Social links to be placed on your site footer
 footer:
@@ -148,8 +150,8 @@ defaults:
       layout: "default"
       header_type: "base"
       include_on_search   : false
-      cloudtag_url        : "/tags"       #This is where the link on tags would redirect
-      cloudcategory_url   : "/categories" #This is where the link on categories would redirect
+      cloudtag_url        : #This is where the link on tags would redirect
+      cloudcategory_url   : #This is where the link on categories would redirect
   -
     scope:
       path: ""
@@ -165,19 +167,27 @@ defaults:
       show_tags         : true
       show_categories   : true
       show_author       : true
-      show_toc          : false
+      show_breadcrumb   : true
+      breadcrumb_list   :
+        - label: Home
+          url: /
+        - label: Blog
+          url: /blog/
   -
     scope:
       path: ""
-      type: "demo"
+      type: "cheatsheet"
     values:
       header_type       : "hero"
       show_bottomnavs   : true
       show_sociallinks  : true
       include_on_search : true
-      include_on_feed   : true
-
-
+      show_breadcrumb   : true
+      breadcrumb_list   :
+        - label: Home
+          url: /
+        - label: Cheatsheet
+          url: /pages/cheatsheet
 
 
 # XX. Other settings - no need to modify

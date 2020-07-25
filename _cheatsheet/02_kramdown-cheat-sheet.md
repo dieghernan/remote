@@ -2,8 +2,6 @@
 title: Kramdown cheatsheet
 subtitle: Beyond markdown
 excerpt: A demo page checking kramdown
-permalink: /kramdown
-header_type: hero
 ---
 
 ```markdown
