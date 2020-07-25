@@ -100,6 +100,14 @@ navbar:
     url     : /blog/ # url	
   - title   : Cheatsheets
     url     : /pages/cheatsheets
+  - title   : Extras
+    child   :
+      - title : Tags
+        url   : /tags
+      - title : Categories
+        url   : /categories
+      - title : /Archive
+        url   : /archive
   - title   : Docs
     url     : https://dieghernan.github.io/chulapa/docs/01-install
   - title   : Click here and start!
