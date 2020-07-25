@@ -2,7 +2,7 @@
 title: Kramdown cheatsheet
 subtitle: Beyond markdown
 excerpt: A demo page checking kramdown
-tags:[starter,sample]
+tags: [starter,sample]
 ---
 
 ```markdown
