@@ -8,12 +8,12 @@ date: 2020-01-01
 {% capture assess %}
 {% if page.date %}
 a
-{% elsif page.tags %}
+{% elsif page.tags.size > 0 %}
 b
-{% elsif page.categories %}
+{% elsif page.categories.size > 0 %}
 c
 {% else %}
-e
+null
 {% endif %}
 {% endcapture %}
 
