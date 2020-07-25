@@ -2,7 +2,6 @@
 title: Kramdown cheatsheet
 subtitle: Beyond markdown
 excerpt: A demo page checking kramdown
-tags: [urban art, street, downtown]
 ---
 
 ```markdown
