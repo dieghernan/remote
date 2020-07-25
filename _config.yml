@@ -106,7 +106,7 @@ navbar:
         url   : /tags
       - title : Categories
         url   : /categories
-      - title : /Archive
+      - title : Archive
         url   : /archive
   - title   : Docs
     url     : https://dieghernan.github.io/chulapa/docs/01-install
