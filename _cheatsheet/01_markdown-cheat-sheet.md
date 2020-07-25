@@ -2,7 +2,7 @@
 title: Markdown cheatsheet
 subtitle: The basic syntax of your page
 excerpt: A demo page checking Markdown
-date: 2020-07-21
+categories: [urban art, street, downtown]
 ---
 
 ## Markdown cheatsheet
