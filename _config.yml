@@ -98,6 +98,10 @@ navbar:
     url     : /blog/ # url	
   - title   : Cheatsheets
     url     : /pages/cheatsheet
+  - title   : Docs
+    url     : https://dieghernan.github.io/chulapa/docs/01-install
+  - title   : Click and start
+    url     : https://github.com/dieghernan/remote
 #  - title   : # Label submenu
 #    child:		
 #    - title: # Child label		
@@ -108,9 +112,9 @@ navbar:
 #Social links to be placed on your site footer
 footer:
   links:
-    - label : #Label
-      icon  : # Fontawesome 5 icon
-      url   : # A link or email: https://twitter.com/jack, mail@example.com
+    - label : Repo on Github # Label
+      icon  : fab fa-github # Fontawesome 5 icon
+      url   : https://github.com/dieghernan/remote # A link or email: https://twitter.com/jack, mail@example.com
 
 # C. Theme Settings
 # Google Fonts https://fonts.google.com/, add as many as you need
