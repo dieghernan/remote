@@ -23,7 +23,7 @@
 			</div>
 			{% if post.date %}
 			<div class="card-footer border-primary chulapa-bg-transparent ">
-				{% if post.date -%}<p class="small text-right font-italic mb-0">
+				{% if post.date or post.tags -%}<p class="small text-right font-italic mb-0">
 {% if post.last_modified_at %}
 <i class="fa fa-redo fa-xs" aria-hidden="true"></i> {% endif %}
 <time datetime="{{- post.date | date_to_xmlschema -}}">{{- post.date | date: "%d/%m/%Y"  -}}</time></p>{%- endif %}
