@@ -5,6 +5,8 @@ excerpt: A demo page checking kramdown
 tags: [a,b,c]
 ---
 
+page.tags.size
+
 {% capture assess %}
 {% if page.date %}
 a
