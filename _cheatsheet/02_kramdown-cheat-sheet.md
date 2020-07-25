@@ -4,20 +4,6 @@ subtitle: Beyond markdown
 excerpt: A demo page checking kramdown
 ---
 
-{% capture assess %}
-{% if page.date %}
-a
-{% elsif page.tags.size > 0 %}
-b
-{% elsif page.categories.size > 0 %}
-c
-{% else %}
-null
-{% endif %}
-{% endcapture %}
-
-{{ assess }}
-
 ```markdown
 The first paragraph.
 

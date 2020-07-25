@@ -4,20 +4,6 @@ subtitle: The basic syntax of your page
 excerpt: A demo page checking Markdown
 ---
 
-{% capture assess %}
-{% if page.date %}
-a
-{% elsif page.tags.size > 0 %}
-b
-{% elsif page.categories.size > 0 %}
-c
-{% else %}
-null
-{% endif %}
-{% endcapture %}
-
-{{ assess }}
-
 ## Markdown cheatsheet
 
 ```markdown
