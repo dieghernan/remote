@@ -1,7 +1,7 @@
 ---
 layout: cloudcategory
 title: Categories
-permalink: /category
+permalink: /categories
 excerpt: Categories on this theme
 show_breadcrumb   : true
 ---
