@@ -101,7 +101,7 @@ navbar:
   - title   : Docs
     url     : https://dieghernan.github.io/chulapa/docs/01-install
   - title   : Click and start
-    url     : https://github.com/dieghernan/remote
+    url     : https://github.com/dieghernan/chulapa-101/generate
 #  - title   : # Label submenu
 #    child:		
 #    - title: # Child label		
@@ -114,7 +114,7 @@ footer:
   links:
     - label : Repo on Github # Label
       icon  : fab fa-github # Fontawesome 5 icon
-      url   : https://github.com/dieghernan/remote # A link or email: https://twitter.com/jack, mail@example.com
+      url   : https://github.com/dieghernan/chulapa-101 # A link or email: https://twitter.com/jack, mail@example.com
 
 # C. Theme Settings
 # Google Fonts https://fonts.google.com/, add as many as you need
