@@ -2,6 +2,7 @@
 title: Kramdown cheatsheet
 subtitle: Beyond markdown
 excerpt: A demo page checking kramdown
+tags: [a,b,c]
 ---
 
 {% capture assess %}

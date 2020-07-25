@@ -2,6 +2,7 @@
 title: Kramdown cheatsheet
 subtitle: Beyond markdown
 excerpt: A demo page checking kramdown
+date: 2020-01-01
 ---
 
 {% capture assess %}

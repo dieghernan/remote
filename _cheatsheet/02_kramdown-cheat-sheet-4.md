@@ -2,6 +2,7 @@
 title: Kramdown cheatsheet
 subtitle: Beyond markdown
 excerpt: A demo page checking kramdown
+categories: [c,d]
 ---
 
 {% capture assess %}
@@ -17,6 +18,7 @@ e
 {% endcapture %}
 
 {{ assess }}
+
 
 ```markdown
 The first paragraph.
