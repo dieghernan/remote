@@ -1,14 +1,14 @@
 ---
 title: kramdown cheatsheet
 subtitle: Beyond markdown
-excerpt: A demo page checking kramdown
+excerpt: kramdown supercharges Markdown with some interesting features.
 ---
 
 ## What’s kramdown?
 
-**kramdown** is the default Jekyll Markdown processor. The **kramdown** syntax is not supported in plain GitHub Markdown files while it is supported by Jekyll and therefore it is supported when you create your GitHub page.
-
 **kramdown** supercharges Markdown with some interesting features.
+
+**kramdown** is the default Jekyll Markdown processor. When creating your site with Jekyll, you can use the standard Markdown syntax plus some specific **kramdown** syntax, . Jekyll would render your Markdown/**kramdown** into HTML.
 
 <https://kramdown.gettalong.org/quickref.html>
 
@@ -163,7 +163,7 @@ A [link](http://kramdown.gettalong.org "hp")
 to the homepage.
 
 A simple info alert **check it out!**
-{: .alert .alert-info .p-3 .mx-2 mb-3}
+{: #myid .alert .alert-info .p-3 .mx-2 mb-3}
 
 This is a text with a
 footnote[^1].
@@ -184,7 +184,7 @@ A [link](http://kramdown.gettalong.org "hp")
 to the homepage.
 
 A simple info alert **check it out!**
-{: .alert .alert-info .p-3 .mx-2 mb-3}
+{: #myid .alert .alert-info .p-3 .mx-2 mb-3}
 
 This is a text with a
 footnote[^1].
@@ -199,3 +199,18 @@ example.
 
 
 This is *red*{: style="color: red"}.
+
+```markdown
+<div markdown="1">This is the first part of a para,
+which is continued here.
+-  List
+-  List **bold**
+</div>
+
+```
+
+<div markdown="1">This is the first part of a para,
+which is continued here.
+-  List
+-  List **bold**
+</div>
