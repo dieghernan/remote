@@ -13,4 +13,4 @@ Contains basic configuration to get you a site with:
 - Sample [`.travis.yml`](README_ALGOLIA.travis.yml) for using Algolia+Travis CI.
 - Sample files for extending the theme with your [own scripts](./_includes/custom/) and [css](./assets/css/).
 
-[Configure as necessary](https://dieghernan.github.io/chulapa/docs/02-config)and replace sample content with your own.
+[Configure as necessary](https://dieghernan.github.io/chulapa/docs/02-config) and replace sample content with your own.
