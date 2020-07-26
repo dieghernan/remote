@@ -2,7 +2,7 @@
 layout: indexcategory
 title: "Cheatsheets"
 include_collection: cheatsheet
-permalink: /pages/cheatsheets
+permalink: /cheatsheets
 show_breadcrumb: true
 ---
 

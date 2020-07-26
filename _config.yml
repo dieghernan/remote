@@ -99,7 +99,7 @@ navbar:
   - title   : Blog # Label
     url     : /blog/ # url	
   - title   : Cheatsheets
-    url     : /pages/cheatsheets
+    url     : /cheatsheets
   - title   : Extras
     child   :
       - title : Tags
@@ -198,8 +198,8 @@ defaults:
       include_on_search : true
       show_breadcrumb   : true
       breadcrumb_list   :
-        - label: Cheatsheet
-          url: /pages/cheatsheets
+        - label: Cheatsheets
+          url: /cheatsheets
 
 
 # XX. Other settings - no need to modify
