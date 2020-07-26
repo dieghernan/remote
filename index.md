@@ -18,4 +18,6 @@ Contains basic configuration to get you a site with:
 - Sample `.travis.yml` for using Algolia+Travis CI.
 - Sample files for extending the theme with your own scripts and css.
 
+On addition, `jekyll-sitemap` generates your sitemap on <./sitemap.xml>, and Chulapa generates an Atom feed on <./atom.xml> and a RSS 2.0 feed on <./rss.xml>.
+
 [Configure as necessary](https://dieghernan.github.io/chulapa/docs/02-config) and replace sample content with your own.
