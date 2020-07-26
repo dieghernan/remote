@@ -197,8 +197,9 @@ example.
 
 *[HTML]: Hyper Text Markup Language
 
+This *is*{:.underline} some `code`{:#id}{:.class}.
 
-This is Chulapa{:.chulapa} *red*{: style="color: red"}.
+This is *Chulapa*{:.chulapa} *red*{: style="color: red"}.
 
 ```markdown
 <div markdown="1">This is the first part of a para,
