@@ -1,12 +1,11 @@
 ---
 title: "Dean Village"
 header_type: hero
-header_img: "https://images.unsplash.com/photo-1565011231598-66c1ec39b72c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80"
+header_img: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Well_Court%2C_Dean_Village%2C_Edinburgh_%2844485996381%29.jpg/800px-Well_Court%2C_Dean_Village%2C_Edinburgh_%2844485996381%29.jpg"
 categories: [picture]
 tags: [landscape, trips, downtown, edinburgh]
 author:
   location: "Dean Village, Edinburgh"
-include_on_feed: false
 ---
 
 
@@ -16,5 +15,4 @@ include_on_feed: false
 > From [Wikipedia](https://en.wikipedia.org/wiki/Dean_Village)
 > {: .blockquote-footer }
 
-![Dean Village](https://images.unsplash.com/photo-1565011231598-66c1ec39b72c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80)
-{: .rounded-circle }
+![Dean Village](https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Well_Court%2C_Dean_Village%2C_Edinburgh_%2844485996381%29.jpg/800px-Well_Court%2C_Dean_Village%2C_Edinburgh_%2844485996381%29.jpg)
