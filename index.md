@@ -2,7 +2,7 @@
 layout: default
 title: Chulapa on remote
 header_type: hero
-subtitle: Start now!
+subtitle: Chulapa Jekyll Theme starter pack
 ---
 
 Click [**Use this template**](https://github.com/dieghernan/chulapa-101/generate) button above for cloning this repo and get started with [Chulapa Jekyll theme](https://github.com/dieghernan/chulapa).
@@ -14,7 +14,7 @@ Contains basic configuration to get you a site with:
 - Archive pages for posts grouped by year, category, and tag.
 - Sample 404 page.
 - Site search with Lunr.
-- Sample `_config`.
+- Sample `_config` with minimal configuration.
 - Sample `.travis.yml` for using Algolia+Travis CI.
 - Sample files for extending the theme with your own scripts and css.
 

@@ -9,7 +9,7 @@ Contains basic configuration to get you a site with:
 - Archive pages for posts grouped by year, category, and tag.
 - Sample 404 page.
 - Site search with Lunr.
-- Sample [`_config`](_config.yml).
+- Sample [`_config`](_config.yml) with minimal configuration.
 - Sample [`.travis.yml`](README_ALGOLIA.travis.yml) for using Algolia+Travis CI.
 - Sample files for extending the theme with your [own scripts](./_includes/custom/) and [css](./assets/css/).
 
