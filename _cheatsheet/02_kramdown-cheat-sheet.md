@@ -1,6 +1,6 @@
 ---
 title: kramdown cheatsheet
-subtitle: Beyond markdown
+subtitle: Beyond Markdown
 excerpt: kramdown supercharges Markdown with some interesting features.
 categories: [tutorial]
 tags: [starter,syntax,kramdown]
