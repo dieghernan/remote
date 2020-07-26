@@ -110,7 +110,7 @@ navbar:
         url   : /archive
   - title   : Docs
     url     : https://dieghernan.github.io/chulapa/docs/01-install
-  - title   : Click here and start!
+  - title   : Use this template
     url     : https://github.com/dieghernan/chulapa-101/generate
 #  - title   : # Label submenu
 #    child:		
@@ -124,6 +124,9 @@ footer:
     - label : Repo on Github # Label
       icon  : fab fa-github # Fontawesome 5 icon
       url   : https://github.com/dieghernan/chulapa-101 # A link or email: https://twitter.com/jack, mail@example.com
+    - label: "RSS"
+      icon: "fa fa-rss"
+      url:  "./atom.xml"
 
 # C. Theme Settings
 # Google Fonts https://fonts.google.com/, add as many as you need
