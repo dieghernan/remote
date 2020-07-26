@@ -6,6 +6,7 @@ categories: [picture]
 tags: [landscape, trips, downtown, edinburgh]
 author:
   location: "Dean Village, Edinburgh"
+include_on_feed: false
 ---
 
 
