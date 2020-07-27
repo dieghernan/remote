@@ -5,6 +5,8 @@ header_type: hero
 subtitle: Chulapa Jekyll Theme starter pack
 ---
 
+<img alt="GitHub release (latest by date including pre-releases)" src="https://img.shields.io/github/v/release/dieghernan/remote?color=green&include_prereleases&style=plastic">
+
 Click [**Use this template**](https://github.com/dieghernan/chulapa-101/generate) button above for cloning this repo and get started with [Chulapa Jekyll theme](https://github.com/dieghernan/chulapa).
 
 Contains basic configuration to get you a site with:
