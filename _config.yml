@@ -81,7 +81,6 @@ comments:
   provider:         #Enable comments via Disqus https://disqus.com/
   disqus_shortname: #Your site id : check your address https://{{ disqus.shortname }}.disqus.com/admin/
   
-
 # B. Navigation
 # Configure your navbar and the footer of your site
 
