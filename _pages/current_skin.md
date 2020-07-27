@@ -15,6 +15,7 @@ show_tags         : true
 show_categories   : true
 show_author       : true
 show_breadcrumb   : true
+show_toc          : true
 ---
 
 This is a demo page showing the different components of Bootstrap and how they look on this site under the current configuration.
