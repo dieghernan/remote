@@ -7,7 +7,7 @@ categories: [picture]
 tags: [landscape, trips, downtown, project-links]
 project_links:
   - url: https://en.wikipedia.org/wiki/Aqueduct_of_Segovia
-    icon: "fab fa-wikipedia"
+    icon: "fab fa-wikipedia-w"
     label: See on Wikipedia
 author:
   location: "Acueducto de Segovia, Spain"
