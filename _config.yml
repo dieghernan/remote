@@ -130,7 +130,6 @@ footer:
       icon: "fa fa-rss"
       url:  "./atom.xml"
       
-
 # C. Theme Settings
 # Google Fonts https://fonts.google.com/, add as many as you need
 googlefonts:
