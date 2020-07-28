@@ -6,7 +6,7 @@ subtitle: Chulapa Jekyll Theme starter pack
 ---
 
 
-{{ site.github.releases }}
+{{ site.github.releases[0] }}
 
 
 
