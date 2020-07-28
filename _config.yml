@@ -1,4 +1,4 @@
-remote_theme: dieghernan/chulapa@v1.0.0-beta.1
+remote_theme: dieghernan/chulapa
 
 # Find errors on this file with http://www.yamllint.com/
 
@@ -142,6 +142,8 @@ chulapa-skin:
   autothemer    :  # Bool: Use autotheming
   vars          :    
     primary     :   #default ["#007bff"] - Bootstrap blue
+    hero-chulapa-bg-color: red
+    landingpage-chulapa-bg-color: black
     
 # D. Jekyll Defaults and collections: see https://jekyllrb.com/
 
