@@ -1,12 +1,22 @@
 ---
-layout: default
-title: Chulapa on remote
+layout: landingpage
+title: Landing page
+subtitle: First impression is the last impression
+categories: [demo, landingpage]
 header_type: hero
-subtitle: Chulapa Jekyll Theme starter pack
+tags: [layout-landingpage,header-hero, social-links, tags, categories, bottom-navs, date, comments, image, author]
+date: 2020-01-04
+show_date         : true
+show_sociallinks  : true
+show_tags         : true
+show_categories   : true
+show_bottomnavs   : true
+show_comments     : true
+show_author       : true
 ---
 
 
-{{ site.github.releases[0].tag_name }}
+
 
 
 
