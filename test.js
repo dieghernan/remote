@@ -13,7 +13,7 @@ $(document).ready(function() {
         // now create the button, setting the clipboard target to the id
         var btn = document.createElement('div');
         btn.setAttribute('type', 'btn');
-        btn.setAttribute('class', 'btn-copy-code text-right');
+        btn.classList.add( 'btn-copy-code', 'text-right');
         btn.setAttribute('data-clipboard-target', '#' + currentId);
         btn.innerHTML = '<i class="far fa-copy"></i>';
         this.insertBefore(btn, this.firstChild);
