@@ -1,6 +1,6 @@
 // adapted from https://stackoverflow.com/a/48078807/1217368
 $(document).ready(function() {
-   $('.highlight').each(function(i) {
+   $('.highlighter-rouge').each(function(i) {
       if (!$(this).parent().hasClass('no-select-button')) {
 
         // create an id for the current code section
