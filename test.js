@@ -1,39 +1,24 @@
-  /* Clipboard --------------------------*/
+// adapted from https://stackoverflow.com/a/48078807/1217368
+$(document).ready(function() {
+   $('.highlight').each(function(i) {
+      if (!$(this).parent().hasClass('no-select-button')) {
 
-  function changeTooltipMessage(element, msg) {
-    var tooltipOriginalTitle=element.getAttribute('data-original-title');
-    element.setAttribute('data-original-title', msg);
-    $(element).tooltip('show');
-    element.setAttribute('data-original-title', tooltipOriginalTitle);
-  }
+        // create an id for the current code section
+        var currentId = "codeblock" + (i + 1);
 
-  if(ClipboardJS.isSupported()) {
-    $(document).ready(function() {
-      var copyButton = "<button type='button' class='btn btn-primary btn-copy-ex' type = 'submit' title='Copy to clipboard' aria-label='Copy to clipboard' data-toggle='tooltip' data-placement='left auto' data-trigger='hover' data-clipboard-copy><i class='fa fa-copy'></i></button>";
+        // find the code section and add the id to it
+        var codeSection = $(this).find('code');
+        codeSection.attr('id', currentId);
 
-      $(".examples, div.sourceCode").addClass("hasCopyButton");
-
-      // Insert copy buttons:
-      $(copyButton).prependTo(".hasCopyButton");
-
-      // Initialize tooltips:
-      $('.btn-copy-ex').tooltip({container: 'body'});
-
-      // Initialize clipboard:
-      var clipboardBtnCopies = new ClipboardJS('[data-clipboard-copy]', {
-        text: function(trigger) {
-          return trigger.parentNode.textContent;
-        }
-      });
-
-      clipboardBtnCopies.on('success', function(e) {
-        changeTooltipMessage(e.trigger, 'Copied!');
-        e.clearSelection();
-      });
-
-      clipboardBtnCopies.on('error', function() {
-        changeTooltipMessage(e.trigger,'Press Ctrl+C or Command+C to copy');
-      });
+        // now create the button, setting the clipboard target to the id
+        var btn = document.createElement('a');
+        btn.setAttribute('type', 'btn');
+        btn.setAttribute('class', 'btn-copy-code');
+        btn.setAttribute('data-clipboard-target', '#' + currentId);
+        btn.innerHTML = '<i class="far fa-file-code fa-2x"></i>&nbsp;&nbsp;Copy to clipboard';
+        this.insertBefore(btn, this.firstChild);
+      }
     });
-  }
-})(window.jQuery || window.$)
+
+    new ClipboardJS('.btn-copy-code');
+  });
