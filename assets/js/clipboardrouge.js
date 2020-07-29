@@ -1,4 +1,7 @@
-// adapted from https://stackoverflow.com/a/48078807/1217368
+---
+layout: null
+---
+// adapted from https://experimentingwithcode.com/creating-a-jekyll-blog-with-bootstrap-4-and-sass-part-4/
 $(document).ready(function() {
    $('.highlighter-rouge').each(function(i) {
       if (!$(this).parent().hasClass('no-select-button')) {
