@@ -11,11 +11,12 @@ $(document).ready(function() {
         codeSection.attr('id', currentId);
 
         // now create the button, setting the clipboard target to the id
-        var btn = document.createElement('a');
+        var btn = document.createElement('div');
         btn.setAttribute('type', 'btn');
         btn.setAttribute('class', 'btn-copy-code');
+        btn.setAttribute('class', 'text-right');
         btn.setAttribute('data-clipboard-target', '#' + currentId);
-        btn.innerHTML = '<i class="far fa-copy fa-sm"></i>';
+        btn.innerHTML = '<i class="far fa-copy"></i>';
         this.insertBefore(btn, this.firstChild);
       }
     });
