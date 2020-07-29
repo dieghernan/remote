@@ -15,7 +15,7 @@ $(document).ready(function() {
         btn.setAttribute('type', 'btn');
         btn.classList.add( 'btn-copy-code', 'text-right');
         btn.setAttribute('data-clipboard-target', '#' + currentId);
-        btn.innerHTML = '<i class="far fa-copy"></i>';
+        btn.innerHTML = '<p class="btn btn-primary"><i class="far fa-copy"></i></p>';
         this.insertBefore(btn, this.firstChild);
       }
     });
