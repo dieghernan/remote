@@ -4,7 +4,7 @@ tags: [random, exciting-stuff]
 ---
 
 This is my first post, how exciting!
-[Link](./archive)
+[Link](../archive)
 
 url {{ site.url }}
 
