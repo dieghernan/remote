@@ -103,6 +103,8 @@ navbar:
     url     : /blog/ # url	
   - title   : Cheatsheets
     url     : /cheatsheets
+  - title   : Demos
+    url     : /demo
   - title   : Extras
     child   :
       - title : Tags
@@ -160,6 +162,9 @@ collections:
   cheatsheet:
     output: true
     permalink: /cheatsheets/:name
+  demo:
+    output: true
+    permalink: /demo/:name
 collections_dir     : 
 permalink           : /:year:month:day_:title/
 
@@ -207,7 +212,18 @@ defaults:
       breadcrumb_list   :
         - label: Cheatsheets
           url: /cheatsheets
-
+  -
+    scope:
+      path: ""
+      type: "demo"
+    values:
+      layout            : "default"
+      header_type       : "base"
+      include_on_search : true
+      show_breadcrumb   : true
+      breadcrumb_list   :
+        - label: Demo
+          url: /demo
 
 # XX. Other settings - no need to modify
 # HTML Compression
