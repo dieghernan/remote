@@ -36,22 +36,8 @@ show_author       : true
 ```
 
 
-<button class="btn" data-clipboard-text="1">Copy</button>
-<button class="btn" data-clipboard-text="2">Copy</button>
-<button class="btn" data-clipboard-text="3">Copy</button>
-    
-<script>
-    var clipboard = new ClipboardJS('.btn');
 
-    clipboard.on('success', function(e) {
-        console.log(e);
-    });
-
-    clipboard.on('error', function(e) {
-        console.log(e);
-    });
-</script>
-
+And an inline code `here see how to get along with this`
 
 Click [**Use this template**](https://github.com/dieghernan/chulapa-101/generate) button above for cloning this repo and get started with [Chulapa Jekyll theme](https://github.com/dieghernan/chulapa).
 
