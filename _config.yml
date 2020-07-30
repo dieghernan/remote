@@ -149,6 +149,7 @@ chulapa-skin:
   autothemer    :  # Bool: Use autotheming
   vars          :    
     primary     :   #default ["#007bff"] - Bootstrap blue
+    border-radius : .75rem
     
 # D. Jekyll Defaults and collections: see https://jekyllrb.com/
 
