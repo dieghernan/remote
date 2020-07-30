@@ -3,7 +3,7 @@ title: Image on header
 subtitle: Transparencies work better
 categories: [demo,layout]
 header_type: image
-header_img: /assets/img/site/transparent.png
+header_img: https://dieghernan.github.io/chulapa/assets/img/site/transparent.png
 tags: [layout-default,header-image, image]
 show_sociallinks  : true
 show_tags         : true

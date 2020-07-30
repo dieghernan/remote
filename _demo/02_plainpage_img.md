@@ -1,7 +1,7 @@
 ---
 title: Plain page with image
 subtitle: Expanding the layout
-header_img : "./assets/img/gallery/black-metal-post-with-sad-face-paint-3314301.jpg"
+header_img : "https://dieghernan.github.io/chulapa/assets/img/gallery/black-metal-post-with-sad-face-paint-3314301.jpg"
 categories: [demo]
 tags: [layout-default,header-base, image, social-links, tags, categories, bottom-navs]
 show_sociallinks  : true
