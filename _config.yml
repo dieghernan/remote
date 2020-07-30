@@ -144,7 +144,7 @@ googlefonts:
 
 # Theme and colors
 chulapa-skin: 
-  highlight     :  thankful_eyes # default["default"]
+  highlight     :  gruvbox.light # default["default"]
   skin         :  pear # Optional predefined skins
   autothemer    :  # Bool: Use autotheming
   vars          :    
