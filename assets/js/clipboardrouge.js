@@ -8,7 +8,7 @@ $('.btn').tooltip({
 });
 
 function setTooltip(btn,message) {
-  btn.firstChild.tooltip('hide')
+  btn.tooltip('hide')
     .attr('data-original-title', message)
     .tooltip('show');
   btn.firstChild.setAttribute('class', 'btn btn-success btn-sm mb-0 ');
@@ -19,6 +19,8 @@ function hideTooltip(btn) {
   setTimeout(function() {
     btn.firstChild.tooltip('hide');
   }, 1000);
+  btn.firstChild.setAttribute('class', 'btn btn-light btn-sm mb-0');
+    btn.firstChild.removeAttribute('aria-label');
 }
 
 
@@ -80,6 +82,6 @@ var btn = $(e.trigger);
 clipboard.on('error', function(e) {
     var btn = $(e.trigger);
      e.clearSelection();
-  setTooltip('Failed!');
+  setTooltip(btn,'Failed!');
   hideTooltip(btn);
 });
