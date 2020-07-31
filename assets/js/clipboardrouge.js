@@ -4,7 +4,7 @@ layout: null
 
 // Tooltip
 
-$('.btn-copy-code').tooltip({
+$('.btn-copy-code').firstChild.tooltip({
   trigger: 'click',
   placement: 'top'
 });
@@ -68,7 +68,7 @@ $(document).ready(function() {
 var clipboard = new ClipboardJS('.btn-copy-code');
 
 clipboard.on('success', function(e) {
-  var btn = $(e.trigger);
+  var btn = $(e.trigger).firstChild;
   setTooltip(btn,'Copied!');
   hideTooltip(btn);
 });
