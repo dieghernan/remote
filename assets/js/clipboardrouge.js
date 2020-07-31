@@ -8,14 +8,16 @@ $('.btn').tooltip({
 });
 
 function setTooltip(btn,message) {
-  btn.tooltip('hide')
+  btn.firstChild.tooltip('hide')
     .attr('data-original-title', message)
     .tooltip('show');
+  btn.firstChild.setAttribute('class', 'btn btn-success btn-sm mb-0 ');
+    btn.setAttribute('aria-label', message);
 }
 
 function hideTooltip(btn) {
   setTimeout(function() {
-    btn.tooltip('hide');
+    btn.firstChild.tooltip('hide');
   }, 1000);
 }
 
@@ -70,12 +72,14 @@ clipboard.on('success', function(e) {
 var btn = $(e.trigger);
 
   var btn = $(e.trigger);
+  e.clearSelection();
   setTooltip(btn,'Copied!');
   hideTooltip(btn);
 });
 
 clipboard.on('error', function(e) {
     var btn = $(e.trigger);
+     e.clearSelection();
   setTooltip('Failed!');
   hideTooltip(btn);
 });
