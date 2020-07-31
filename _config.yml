@@ -144,7 +144,7 @@ googlefonts:
 
 # Theme and colors
 chulapa-skin: 
-  highlight     :  dracula # default["default"]
+  highlight     :  cran # default["default"]
   skin         :  pear # Optional predefined skins
   autothemer    :  # Bool: Use autotheming
   vars          :
