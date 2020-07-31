@@ -4,7 +4,7 @@ layout: null
 
 $('.btn').tooltip({
   trigger: 'click',
-  placement: 'bottom'
+  placement: 'top'
 });
 
 function setTooltip(btn,message) {
@@ -17,7 +17,7 @@ function setTooltip(btn,message) {
 
 function hideTooltip(btn) {
   setTimeout(function() {
-    btn.firstChild.tooltip('hide');
+    btn.tooltip('hide');
   }, 1000);
   btn.firstChild.setAttribute('class', 'btn btn-light btn-sm mb-0');
     btn.firstChild.removeAttribute('aria-label');
