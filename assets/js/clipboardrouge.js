@@ -10,7 +10,7 @@ $('.btn').tooltip({
 });
 
 function setTooltip(btn,message) {
-  btn.tooltip('hide')
+  btn.firstChild.tooltip('hide')
     .attr('data-original-title', message)
     .tooltip('show');
 }
