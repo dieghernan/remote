@@ -13,6 +13,8 @@ function setTooltip(btn,message) {
   btn.firstChild.tooltip('hide')
     .attr('data-original-title', message)
     .tooltip('show');
+    btn.firstChild.setAttribute('class', 'btn btn-success btn-sm mb-0 ');
+    btn.setAttribute('aria-label', message);
 }
 
 function hideTooltip(btn) {
@@ -71,6 +73,7 @@ clipboard.on('success', function(e) {
   var btn = $(e.trigger);
   setTooltip(btn,'Copied!');
   hideTooltip(btn);
+  e.clearSelection();
 });
 
 clipboard.on('error', function(e) {
