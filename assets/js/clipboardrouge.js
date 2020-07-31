@@ -3,20 +3,20 @@ layout: null
 ---
 
 $('.btn-copy-code').tooltip({
-  trigger: 'click',
-  placement: 'bottom'
+    trigger: 'click',
+    placement: 'bottom'
 });
 
-function showTooltip(btn,message) {
-  btn.tooltip('hide')
-    .attr('data-original-title', message)
-    .tooltip('show');
+function showTooltip(btn, message) {
+    btn.tooltip('hide')
+        .attr('data-original-title', message)
+        .tooltip('show');
 }
 
 function hideTooltip(btn) {
-  setTimeout(function() {
-    btn.tooltip('hide');
-  }, 1000);
+    setTimeout(function() {
+        btn.tooltip('hide');
+    }, 1000);
 }
 
 function sleep(ms) {
@@ -29,6 +29,7 @@ async function setTooltip(btn, message) {
     await sleep(1000);
     btn.firstChild.setAttribute('class', 'btn btn-light btn-sm mb-0');
     btn.firstChild.removeAttribute('aria-label');
+    btn.removeAttribute('data-original-title');
 }
 
 async function warningTooltip(btn, message) {
@@ -37,6 +38,7 @@ async function warningTooltip(btn, message) {
     await sleep(500);
     btn.firstChild.setAttribute('class', 'btn btn-light btn-sm mb-0');
     btn.firstChild.removeAttribute('aria-label');
+    btn.removeAttribute('data-original-title');
 }
 
 // adapted from https://experimentingwithcode.com/creating-a-jekyll-blog-with-bootstrap-4-and-sass-part-4/
@@ -69,10 +71,13 @@ clipboard.on('success', function(e) {
     e.clearSelection();
     setTooltip(e.trigger, 'Copied!');
     var btn = $(e.trigger);
-    showTooltip(btn,'Copied!');
+    showTooltip(btn, 'Copied!');
     hideTooltip(btn);
 });
 
 clipboard.on('error', function(e) {
-    warningTooltip(e.trigger, 'Copied!');
+    warningTooltip(e.trigger, 'Error!');
+    var btn = $(e.trigger);
+    showTooltip(btn, 'Error!');
+    hideTooltip(btn);
 });
