@@ -4,7 +4,7 @@ layout: null
 
 // Tooltip
 
-$('.btn').tooltip({
+$('.btn-copy-code').firstChild.tooltip({
   trigger: 'click',
   placement: 'top'
 });
