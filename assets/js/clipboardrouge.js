@@ -2,11 +2,30 @@
 layout: null
 ---
 
+// Tooltip
+
+$('.btn-copy-code').tooltip({
+  trigger: 'click',
+  placement: 'top'
+});
+
+function setTooltip(btn,message) {
+  btn.tooltip('hide')
+    .attr('data-original-title', message)
+    .tooltip('show');
+}
+
+function hideTooltip(btn) {
+  setTimeout(function() {
+    btn.tooltip('hide');
+  }, 1000);
+}
+
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-async function setTooltip(btn, message) {
+async function setTooltip2(btn, message) {
     btn.firstChild.setAttribute('class', 'btn btn-success btn-sm mb-0 ');
     btn.setAttribute('aria-label', message);
     await sleep(500);
@@ -49,10 +68,13 @@ $(document).ready(function() {
 var clipboard = new ClipboardJS('.btn-copy-code');
 
 clipboard.on('success', function(e) {
-    e.clearSelection();
-    setTooltip(e.trigger, 'Copied!');
+  var btn = $(e.trigger);
+  setTooltip(btn,'Copied!');
+  hideTooltip(btn);
 });
 
 clipboard.on('error', function(e) {
-    warningTooltip(e.trigger, 'Copied!');
+  var btn = $(e.trigger);
+  setTooltip(btn,'Failed!');
+  hideTooltip(btn);
 });
