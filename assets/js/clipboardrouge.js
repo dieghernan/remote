@@ -71,8 +71,9 @@ var clipboard = new ClipboardJS('.btn-copy-code');
 clipboard.on('success', function(e) {
     e.clearSelection();
     setTooltip(e.trigger, 'Copied!');
-    showTooltip(e.trigger,'Copied!');
-    hideTooltip(e.trigger);
+    var btn = $(e.trigger);
+    showTooltip(btn,'Copied!');
+    hideTooltip(btn);
 });
 
 clipboard.on('error', function(e) {
