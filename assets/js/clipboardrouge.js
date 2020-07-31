@@ -1,7 +1,7 @@
 ---
 layout: null
 ---
-
+    
 $('.btn-copy-code').tooltip({
     trigger: 'click',
     placement: 'bottom'
@@ -24,20 +24,20 @@ function sleep(ms) {
 }
 
 async function setTooltip(btn, message) {
-    btn.firstChild.setAttribute('class', 'btn btn-success btn-sm mb-0 ');
+    btn.setAttribute('class', 'btn-copy-code btn btn-success btn-sm mb-0 ');
     btn.setAttribute('aria-label', message);
     await sleep(1000);
-    btn.firstChild.setAttribute('class', 'btn btn-light btn-sm mb-0');
-    btn.firstChild.removeAttribute('aria-label');
+    btn.setAttribute('class', 'btn-copy-code btn btn-light btn-sm mb-0');
+    btn.removeAttribute('aria-label');
     btn.removeAttribute('data-original-title');
 }
 
 async function warningTooltip(btn, message) {
-    btn.firstChild.setAttribute('class', 'btn btn-danger btn-sm mb-0 ');
+    btn.setAttribute('class', 'btn-copy-code btn btn-danger btn-sm mb-0 ');
     btn.setAttribute('aria-label', message);
     await sleep(500);
-    btn.firstChild.setAttribute('class', 'btn btn-light btn-sm mb-0');
-    btn.firstChild.removeAttribute('aria-label');
+    btn.setAttribute('class', 'btn-copy-code btn btn-light btn-sm mb-0');
+    btn.removeAttribute('aria-label');
     btn.removeAttribute('data-original-title');
 }
 
@@ -56,10 +56,10 @@ $(document).ready(function() {
 
             // now create the button, setting the clipboard target to the id
             var btn = document.createElement('div');
-            btn.setAttribute('type', 'btn');
-            btn.classList.add('btn-copy-code', 'text-right', "mb-1");
-            btn.setAttribute('data-clipboard-target', '#' + currentId);
-            btn.innerHTML = '<p class="btn btn-light btn-sm mb-0 "><i class="far fa-copy"></i><span class="invisible"></span></p>';
+            //btn.setAttribute('type', 'btn');
+            btn.classList.add('text-right', "mb-1");
+            btn.innerHTML = '<p class="btn btn-copy-code btn-light btn-sm mb-0"><i class="far fa-copy"></i><span class="invisible"></span></p>';
+            btn.firstChild.setAttribute('data-clipboard-target', '#' + currentId);
             this.insertBefore(btn, this.firstChild);
         }
     });
