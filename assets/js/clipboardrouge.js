@@ -2,9 +2,6 @@
 layout: null
 ---
 
-
-
-
 $('.btn-copy-code').tooltip({
   trigger: 'click',
   placement: 'bottom'
@@ -29,7 +26,7 @@ function sleep(ms) {
 async function setTooltip(btn, message) {
     btn.firstChild.setAttribute('class', 'btn btn-success btn-sm mb-0 ');
     btn.setAttribute('aria-label', message);
-    await sleep(500);
+    await sleep(1000);
     btn.firstChild.setAttribute('class', 'btn btn-light btn-sm mb-0');
     btn.firstChild.removeAttribute('aria-label');
 }
