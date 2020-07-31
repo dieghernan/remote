@@ -2,9 +2,9 @@
 layout: null
 ---
 
-$('button').tooltip({
+$('.btn-copy-code').tooltip({
   trigger: 'click',
-  placement: 'bottom'
+  placement: 'top'
 });
 
 function setTooltip(btn,message) {
