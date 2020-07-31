@@ -2,17 +2,15 @@
 layout: null
 ---
 
-$('.btn').tooltip({
+$('button').tooltip({
   trigger: 'click',
-  placement: 'top'
+  placement: 'bottom'
 });
 
 function setTooltip(btn,message) {
   btn.tooltip('hide')
     .attr('data-original-title', message)
     .tooltip('show');
-  btn.firstChild.setAttribute('class', 'btn btn-success btn-sm mb-0 ');
-    btn.setAttribute('aria-label', message);
 }
 
 function hideTooltip(btn) {
@@ -20,7 +18,6 @@ function hideTooltip(btn) {
     btn.tooltip('hide');
   }, 1000);
 }
-
 
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
