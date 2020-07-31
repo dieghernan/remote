@@ -24,21 +24,24 @@ function sleep(ms) {
 }
 
 async function setTooltip(btn, message) {
-    btn.setAttribute('class', 'btn-copy-code btn btn-success btn-sm mb-0 ');
+    btn.classList.remove('btn-light');
+    btn.classList.add('btn-success');
     btn.setAttribute('aria-label', message);
     await sleep(1000);
-    btn.setAttribute('class', 'btn-copy-code btn btn-light btn-sm mb-0');
     btn.removeAttribute('aria-label');
     btn.removeAttribute('data-original-title');
+    btn.classList.add('btn-light');
+    btn.classList.remove('btn-success');
 }
 
 async function warningTooltip(btn, message) {
-    btn.setAttribute('class', 'btn-copy-code btn btn-danger btn-sm mb-0 ');
-    btn.setAttribute('aria-label', message);
+    btn.classList.remove('btn-light');
+    btn.classList.add('btn-danger');
     await sleep(500);
-    btn.setAttribute('class', 'btn-copy-code btn btn-light btn-sm mb-0');
     btn.removeAttribute('aria-label');
     btn.removeAttribute('data-original-title');
+    btn.classList.add('btn-light');
+    btn.classList.remove('btn-danger');
 }
 
 // adapted from https://experimentingwithcode.com/creating-a-jekyll-blog-with-bootstrap-4-and-sass-part-4/
@@ -58,7 +61,8 @@ $(document).ready(function() {
             var btn = document.createElement('div');
             //btn.setAttribute('type', 'btn');
             btn.classList.add('text-right', "mb-1");
-            btn.innerHTML = '<p class="btn btn-copy-code btn-light btn-sm mb-0"><i class="far fa-copy"></i><span class="invisible"></span></p>';
+            btn.innerHTML = '<p><i class="far fa-copy"></i></p>';
+            btn.firstChild.classList.add('btn-copy-code', 'btn', 'btn-light', 'btn-sm', 'mb-0')
             btn.firstChild.setAttribute('data-clipboard-target', '#' + currentId);
             this.insertBefore(btn, this.firstChild);
         }
