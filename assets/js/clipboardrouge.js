@@ -18,9 +18,9 @@ function setTooltip(btn,message) {
 function hideTooltip(btn) {
   setTimeout(function() {
     btn.tooltip('hide');
-  }, 1000);
-  btn.firstChild.setAttribute('class', 'btn btn-light btn-sm mb-0');
+    btn.firstChild.setAttribute('class', 'btn btn-light btn-sm mb-0');
     btn.firstChild.removeAttribute('aria-label');
+  }, 1000);
 }
 
 
