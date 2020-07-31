@@ -2,37 +2,26 @@
 layout: null
 ---
 
-// Tooltip
-
-$('.btn-copy-code').firstChild.tooltip({
+$('.btn-copy-code').tooltip({
   trigger: 'click',
-  placement: 'top'
+  placement: 'bottom'
 });
 
-function setTooltip(btn,message) {
-  btn.firstChild.tooltip('hide')
-    .attr('data-original-title', message)
-    .tooltip('show');
-    btn.firstChild.setAttribute('class', 'btn btn-success btn-sm mb-0 ');
-    btn.setAttribute('aria-label', message);
-}
-
-function hideTooltip(btn) {
-  setTimeout(function() {
-    btn.tooltip('hide');
-  }, 1000);
-}
 
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-async function setTooltip2(btn, message) {
+async function setTooltip(btn, message) {
+    btn.tooltip('hide')
+    .attr('data-original-title', message)
+    .tooltip('show');
     btn.firstChild.setAttribute('class', 'btn btn-success btn-sm mb-0 ');
     btn.setAttribute('aria-label', message);
-    await sleep(500);
+    await sleep(1000);
     btn.firstChild.setAttribute('class', 'btn btn-light btn-sm mb-0');
     btn.firstChild.removeAttribute('aria-label');
+    btn.tooltip('hide');
 }
 
 async function warningTooltip(btn, message) {
@@ -70,14 +59,10 @@ $(document).ready(function() {
 var clipboard = new ClipboardJS('.btn-copy-code');
 
 clipboard.on('success', function(e) {
-  var btn = $(e.trigger);
-  setTooltip(btn,'Copied!');
-  hideTooltip(btn);
-  e.clearSelection();
+    e.clearSelection();
+    setTooltip(e.trigger, 'Copied!');
 });
 
 clipboard.on('error', function(e) {
-  var btn = $(e.trigger);
-  setTooltip(btn,'Failed!');
-  hideTooltip(btn);
+    warningTooltip(e.trigger, 'Copied!');
 });
