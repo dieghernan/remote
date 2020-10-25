@@ -5,9 +5,11 @@
 
 #markdown-toc {
     border:0;
+    background-color: "red";
+    padding: 1em;
     ul {
-        padding-left: 0;
-        margin-left: 0;
+        //padding-left: 0;
+        //margin-left: 0;
         padding-right: 0;
         margin-right: 0;
         border: 0;
@@ -20,6 +22,21 @@
             //font-weight: $font-weight-normal !important;
             padding-right: 0;
             margin-right: 0;
+        }
+    }
+
+    ul {
+      a {
+        color: "blue";
+        }
+      &:first-child {
+        //@include border-top-radius($border-radius-lg);
+        //padding-top: map-get($spacers, 2) !important;
+        }
+        
+      &:last-child {
+        //@include border-bottom-radius($border-radius-lg);
+        //padding-bottom: map-get($spacers, 2) !important;
         }
     }
 }
