@@ -8,6 +8,11 @@ show_toc: true
 
 ---
 
+
+*  Markdown unordered list
+{:toc}
+
+
 ## What’s kramdown?
 
 **kramdown** supercharges Markdown with some interesting features.
@@ -69,11 +74,6 @@ Second level header
 
 ###### H6 header
 
-# Contents header
-{:.no_toc}
-
-* A markdown unordered list which will be replaced with the ToC, excluding the "Contents header" from above
-{:toc}
 
 # H1 header2
 
