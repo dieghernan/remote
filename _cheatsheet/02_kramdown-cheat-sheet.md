@@ -210,6 +210,8 @@ which is continued here.
 
 ```
 
+{:toc}
+
 <div markdown="1">This is the first part of a para,
 which is continued here.
 -  List
