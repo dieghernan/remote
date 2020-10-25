@@ -4,6 +4,8 @@ subtitle: Beyond Markdown
 excerpt: kramdown supercharges Markdown with some interesting features.
 categories: [tutorial]
 tags: [starter,syntax,kramdown]
+show_toc: true
+
 ---
 
 ## What’s kramdown?
