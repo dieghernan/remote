@@ -14,8 +14,9 @@ title: Syntax highlighting demo
 <div id="selected" class="language-yaml highlighter-rouge"></div>
 
 <script>
-  var styles = ['autumn', 'borland', 'bw', 'cran', 'default', 'dracula', 'emacs',
-  	'friendly', 'fruity', 'github', 'grubox.light', 'manni', 'monokai', 'colorful'
+  var styles = ['autumn', 'borland', 'bw', 'colorful', 'default', 'emacs',
+  	'friendly', 'fruity', 'github', 'manni', 'monokai', 'murphy','native',
+  	'pastie','perldoc','tango','trac','vim','vs','zenburn'
   ].sort();
   
   styles.forEach(function(word) {
@@ -54,7 +55,7 @@ title: Syntax highlighting demo
   } */
 </script>
 
-*create toc
+* create toc
 {:toc}
 
 #### Python
