@@ -12,7 +12,7 @@ title: Syntax highlighting demo
 
 <h3>On your <code>_config.yml</code></h3>
 <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">chulapa-skin</span><span class="pi">:</span> 
-  <span class="na">highlight   </span><span class="pi">:</span> <span class="s" id="selected"></span>
+  <span class="na">highlight   </span><span class="pi">:</span> <span class="s" id="selected">SELECT A THEME</span>
 </code></pre></div></div>
 
 <script>
