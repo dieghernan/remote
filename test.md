@@ -12,7 +12,7 @@ title: Syntax highlighting demo
 
 <h3>On your <code>_config.yml</code></h3>
 <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">chulapa-skin</span><span class="pi">:</span> 
-  <span class="na">highlight   </span><span class="pi">:</span> <span class="s2">"</span><span class="s" id="selected"><span class="s2"></span></span>
+  <span class="na">highlight   </span><span class="pi">:</span> <span class="s" id="selected"></span>
 </code></pre></div></div>
 
 <script>
@@ -43,7 +43,7 @@ title: Syntax highlighting demo
 sel = document.getElementById("selected");
   		
   		
-  		sel.innerHTML = themename;
+  		sel.innerHTML = '"' + themename + '"';
   		
       return true;
   } 
