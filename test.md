@@ -11,13 +11,9 @@ title: Syntax highlighting demo
 </div>
 
 <h3>On your <code>_config.yml</code></h3>
-<div class="language-yaml highlighter-rouge">
-<div class="highlight"><pre class="highlight"><code>
-<span class="na">chulapa-skin</span><span class="pi">:</span> </br>
-<span class="na">  highlight</span><span class="pi">:</span><span class="s2"> </span><span id="selected" class="s"></span></code></pre></div>
-
-
-</div>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">chulapa-skin</span><span class="pi">:</span> 
+  <span class="na">highlight   </span><span class="pi">:</span> <span class="s2">"</span><span class="s" id="selected"><span class="s2"></span></span>
+</code></pre></div></div>
 
 <script>
   var styles = ['autumn', 'borland', 'bw', 'colorful', 'default', 'emacs',
