@@ -53,7 +53,7 @@ sel = document.getElementById("selected");
   		
   		active = document.getElementById(id2);
   		
-  		active.add("active")
+  		active.classList.add("active")
       return true;
   } 
 </script>
