@@ -45,6 +45,8 @@ sel = document.getElementById("selected");
   		
   		sel.innerHTML = '"' + themename + '"';
   		
+  		label = document.getElementById("dropdownMenuButton");
+  		label.innerHTML = themename;
       return true;
   } 
 </script>
