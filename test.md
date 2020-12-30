@@ -24,6 +24,7 @@ title: Syntax highlighting demo
   styles.forEach(function(word) {
   	var row = document.createElement('a');
   	row.classList.add('dropdown-item');
+  	row.id = '"' + word + '"';
   	row.href = 'javascript:void(0)';
   	row.innerHTML = word;
   	row.setAttribute("onclick", "reaplyStyles('" + word + "');");
@@ -47,6 +48,12 @@ sel = document.getElementById("selected");
   		
   		label = document.getElementById("dropdownMenuButton");
   		label.innerHTML = themename;
+  		
+  		var id2 = '"' + themename + '"';
+  		
+  		active = document.getElementById(id2);
+  		
+  		active.add("active")
       return true;
   } 
 </script>
