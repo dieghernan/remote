@@ -25,8 +25,8 @@ jobs:
         run: |
           bundle config path vendor/bundle
           bundle install --jobs 4 --retry 3
-        env:
-          ALGOLIA_API_KEY: ${{ secrets.ALGOLIA_API_KEY }}
           
-      - run: bundle exec jekyll algolia
+      - name: Run algolia
+        run: bundle exec jekyll algolia
+        env: ALGOLIA_API_KEY = ${{ secrets.ALGOLIA_API_KEY }}
       
