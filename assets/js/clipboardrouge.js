@@ -4,7 +4,7 @@ layout: null
     
 $('.btn-copy-code').tooltip({
     trigger: 'click',
-    placement: 'bottom'
+    placement: 'left'
 });
 
 function showTooltip(btn, message) {
