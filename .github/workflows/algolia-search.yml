@@ -1,12 +1,9 @@
-# Important: ALGOLIA_API_KEY should be set on Settings > Secrets
-# Name: ALGOLIA_API_KEY
-# Value: Your Algolia Admin API Key value (not be confused with Search-Only API Key)
 on:
   push:
     branches:
       - master
       - main
-  
+
 name: algolia-search
 
 jobs:
@@ -20,9 +17,9 @@ jobs:
       - uses: actions/cache@v2
         with:
           path: vendor/bundle
-          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+          key: ${{ runner.os }}-gems-${{ hashFiles(‘**/Gemfile.lock’) }}
           restore-keys: |
             ${{ runner.os }}-gems-
-      - uses: dieghernan/algolia-jekyll-action@test3
+      - uses: dieghernan/algolia-jekyll-action@v1.0.0-beta1
         with:
-          APIKEY: '${{ secrets.ALGOLIA_API_KEY }}'
+          APIKEY: ‘${{ secrets.ALGOLIA_API_KEY }}’
