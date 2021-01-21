@@ -146,8 +146,8 @@ googlefonts:
 # Theme and colors
 chulapa-skin: 
   highlight     :  #default["default"]
-  skin         :  pear # Optional predefined skins
-  autothemer    :  # Bool: Use autotheming
+  skin         :   # Optional predefined skins
+  autothemer    :  true # Bool: Use autotheming
   vars          :
     
 # D. Jekyll Defaults and collections: see https://jekyllrb.com/
