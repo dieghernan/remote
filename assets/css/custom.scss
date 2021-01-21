@@ -13,3 +13,15 @@
 .highlighter-rouge:hover button.btn-copy-ex {
   visibility: visible;
 }
+
+// Scroll on pre
+pre {
+  word-wrap: normal;
+  word-break: normal;
+}
+
+pre code {
+  overflow: auto;
+  word-wrap: normal;
+  white-space: pre;
+}
