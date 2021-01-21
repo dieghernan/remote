@@ -18,6 +18,6 @@ jobs:
           key: ‘${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}’
           restore-keys: |
             ${{ runner.os }}-gems-
-      - uses: dieghernan/algolia-jekyll-action@v1
+      - uses: dieghernan/algolia-jekyll-action@v1.0.0-beta1
         with:
           APIKEY: '${{ secrets.ALGOLIA_API_KEY }}'
