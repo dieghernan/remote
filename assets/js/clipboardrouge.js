@@ -58,12 +58,12 @@ $(document).ready(function() {
             codeSection.attr('id', currentId);
 
             // now create the button, setting the clipboard target to the id
-            var btn = document.createElement('div');
+            var btn = document.createElement('button');
             //btn.setAttribute('type', 'btn');
-            btn.classList.add('text-right', "mb-1");
+            btn.classList.add('btn', "btn-light", 'btn-copy-ex');
             btn.innerHTML = '<p><i class="far fa-copy"></i></p>';
-            btn.firstChild.classList.add('btn-copy-code', 'btn', 'btn-light', 'btn-sm', 'mb-0', 'btn-copy-ex')
-            btn.firstChild.setAttribute('data-clipboard-target', '#' + currentId);
+            //btn.firstChild.classList.add('btn-copy-code', 'btn', 'btn-light', 'btn-sm', 'mb-0', 'btn-copy-ex')
+            btn.setAttribute('data-clipboard-target', '#' + currentId);
             this.insertBefore(btn, this.firstChild);
         }
     });
