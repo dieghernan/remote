@@ -3,10 +3,13 @@
 @charset "utf-8";
 // Your custom css /scss here
 
-#markdown-toc {
-    border:0;
-    background-color: "red";
-    a {
-        color: "blue";
-        };
+.btn-copy-ex {
+  position: absolute;
+  right: 0;
+  top: 0;
+  visibility: hidden;
+}
+
+.highlighter-rouge:hover button.btn-copy-ex {
+  visibility: visible;
 }

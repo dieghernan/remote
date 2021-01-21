@@ -62,7 +62,7 @@ $(document).ready(function() {
             //btn.setAttribute('type', 'btn');
             btn.classList.add('text-right', "mb-1");
             btn.innerHTML = '<p><i class="far fa-copy"></i></p>';
-            btn.firstChild.classList.add('btn-copy-code', 'btn', 'btn-light', 'btn-sm', 'mb-0')
+            btn.firstChild.classList.add('btn-copy-code', 'btn', 'btn-light', 'btn-sm', 'mb-0', 'btn-copy-ex')
             btn.firstChild.setAttribute('data-clipboard-target', '#' + currentId);
             this.insertBefore(btn, this.firstChild);
         }
