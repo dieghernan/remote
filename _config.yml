@@ -146,7 +146,7 @@ googlefonts:
 # Theme and colors
 chulapa-skin: 
   highlight     :  #default["default"]
-  skin         :   # Optional predefined skins
+  skin         :   chulapa # Optional predefined skins
   autothemer    :  true # Bool: Use autotheming
   vars          :
      headings-font-family: "Ibarra Real Nova, serif"
