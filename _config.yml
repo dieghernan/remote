@@ -150,10 +150,9 @@ chulapa-skin:
    # Optional predefined skins
   autothemer    :  true # Bool: Use autotheming
   vars          :
-     headings-font-family: "Ibarra Real Nova, serif"
+     font-family-base: "Ibarra Real Nova, serif"
      primary: "#edc7b7"
-     font-family-base: "ferpal,
-sans-serif"
+     headings-font-family: chulapa,sans-serif
     
 # D. Jekyll Defaults and collections: see https://jekyllrb.com/
 
