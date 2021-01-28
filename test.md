@@ -4,7 +4,8 @@ title: Syntax highlighting demo
 
 
   {% assign sort =  "modified_time" %}
-  {%- assign bricks = site.static_files | where: "image_col", "gallery" -%}
+  
+  {%- assign bricks = site.static_files -%}
 
 {{ bricks | inspect }}
 
