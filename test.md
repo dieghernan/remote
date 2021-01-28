@@ -8,4 +8,6 @@ title: Syntax highlighting demo
 
     {%- assign bricks = bricks | sort: "{{sort}}" | reverse | map: "path" -%}
     
- {{ bricks }}
+{% for item in bricks %}
+- {{ item }}
+{% endfor %}
