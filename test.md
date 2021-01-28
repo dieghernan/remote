@@ -7,7 +7,7 @@ title: Syntax highlighting demo
   
   {%- assign bricks = site.static_files -%}
 
-{{ bricks | inspect }}
+{{ bricks  }}
 
 ## 2
     {%- assign bricks = bricks | sort: "{{sort}}" | reverse | map: "path" -%}
