@@ -228,7 +228,11 @@ defaults:
       breadcrumb_list   :
         - label: Demo
           url: /demo
-
+  -
+    scope:
+      path: "assets/img/"
+    values:
+      image_col         : gallery
 # XX. Other settings - no need to modify
 # HTML Compression
 # - https://jch.penibelst.de/
