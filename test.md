@@ -10,10 +10,12 @@ title: Syntax highlighting demo
 {{ bricks  }}
 
 ## 2
-    {%- assign bricks = bricks | sort: "{{sort}}" | reverse | map: "path" -%}
+    {%- assign bricks = bricks | sort: "{{sort}}"  | map: "path" -%}
     
 {{ bricks | inspect }}
     
+    {%- assign bricks = bricks | sort: "modified_time" | map: "modified_time" %}
+    {{ bricks | inspect }}
     
     
 {% for item in bricks %}
