@@ -22,6 +22,6 @@ https://picsum.photos/seed/70/700/500" %}
 
 # External normalised
 
-{% include_cached snippets/carousel.html random="true" indicators="true" external=externalgallery %}
+{% include_cached snippets/carousel.html indicators="true" external=externalgallery %}
 
 
