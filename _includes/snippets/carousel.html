@@ -13,9 +13,9 @@
 {%- assign end =   include.index_items | default: 100   -%}
 
 {%- if bricks -%}
-<!-- To be removed in production: RANDOM Generator -->
-{%- assign bricks = bricks | sample: bricks.size   -%}
-<!-- End -->
+  {% if include.random %}
+    {%- assign bricks = bricks | sample: bricks.size -%}
+  {%- endif -%}
 <div id="chulapaCarousel" class="carousel slide" data-ride="carousel" data-interval="{{- interval -}}">
   {% if include.indicators %}
   <ol class="carousel-indicators">

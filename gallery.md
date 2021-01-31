@@ -15,20 +15,20 @@ https://picsum.photos/seed/70/700/500" %}
 
 # External 
 
-{% include_cached snippets/masonry.html external=externalgallery %}
+{% include_cached snippets/carousel.html external=externalgallery %}
 
 # External Random
 
-{% include_cached snippets/masonry.html random="true" external=externalgallery %}
+{% include_cached snippets/carousel.html random="true" external=externalgallery %}
 
 # Internal 
 
-{% include_cached snippets/masonry.html internal="gallery" %}
+{% include_cached snippets/carousel.html internal="gallery" %}
 
 
 # Internal Random
 
-{% include_cached snippets/masonry.html random="true" internal="gallery" %}
+{% include_cached snippets/masonry.html random="true" carousel="gallery" %}
 
 
 
