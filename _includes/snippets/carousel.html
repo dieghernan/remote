@@ -11,7 +11,11 @@
 {%- endif -%}
 {%- assign interval =   include.interval | default: 5000   -%}
 {%- assign end =   include.index_items | default: 100   -%}
-
+  {% if include.normalizs %}
+    {%- assign norm = "chulapa-carousel" -%}
+  {% else %}
+    {%- assign norm = "" -%}
+  {% endif %}
 {%- if bricks -%}
   {% if include.random %}
     {%- assign bricks = bricks | sample: bricks.size -%}
@@ -43,7 +47,7 @@
     {% else %}
         <div class="carousel-item">
     {% endif %}
-	<img class="d-block mw-100 chulapa-carousel" src="{{- brick | absolute_url -}}" alt="Carousel Item #{{- forloop.index -}}">
+	<img class="d-block mw-100 {{ norm }}" src="{{- brick | absolute_url -}}" alt="Carousel Item #{{- forloop.index -}}">
 	</div>  
   {%- endfor -%}
   </div>
