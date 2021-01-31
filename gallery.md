@@ -28,7 +28,7 @@ https://picsum.photos/seed/70/700/500" %}
 
 # Internal Random
 
-{% include_cached snippets/carousel.html random="true" internal="gallery" interval="1000" %}
+{% include_cached snippets/carousel.html random="true" indicators="true" internal="gallery" interval="1000" %}
 
 
 
