@@ -16,6 +16,18 @@
   {% if include.random %}
     {%- assign bricks = bricks | sample: bricks.size -%}
   {%- endif -%}
+  {% assign rnd1 = bricks | sample: 1 | size %}
+
+{% assign rnd2 = bricks | sample: 1 | size %}
+
+<!-- Rnd1 {{ rnd1 }} -->
+<!-- Rnd1 {{ rnd2 }} -->
+
+
+- {{ rnd1 }}
+- {{ rnd2 }}
+  
+  
 <div id="chulapaCarousel" class="carousel slide" data-ride="carousel" data-interval="{{- interval -}}">
   {% if include.indicators %}
   <ol class="carousel-indicators">
