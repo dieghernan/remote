@@ -18,7 +18,7 @@
   {%- endif -%}
   {% assign rnd1 = bricks | sample: 1 | size %}
 
-{% assign rnd2 = bricks | sample: 1 | split: "e" | number_of_words %}
+{% assign rnd2 = bricks | sample: 2 | join: "and" | size %}
 
 <!-- Rnd1 {{ rnd1 }} -->
 <!-- Rnd1 {{ rnd2 }} -->
