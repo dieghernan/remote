@@ -16,11 +16,16 @@
   {% if include.random %}
     {%- assign bricks = bricks | sample: bricks.size -%}
   {%- endif -%}
-  {% assign rnd1 = bricks | sample: 1 | size %}
+  {% assign id = bricks | join: ""| size %}
+  {% if include.indicators %}
+    {% assign id = id | times: 10 %}
+  {% endif %}
+  {% if include.indicators %}
+    {% assign id = id | times: 100 %}
+  {% endif %}
 
-{% assign rnd2 = bricks | sample: 2 | join: "and" | size %}
 
-{% assign id = "Carousel" | append: rnd1 | append: rnd2 %}
+{% assign id = "Carousel" | append: id %}
 
 <div id="{{ id }}" class="carousel slide" data-ride="carousel" data-interval="{{- interval -}}">
   {% if include.indicators %}
