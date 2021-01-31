@@ -43,7 +43,7 @@
     {% else %}
         <div class="carousel-item">
     {% endif %}
-	<img class="d-block" style="height: 66vw;" src="{{- brick | absolute_url -}}" alt="Carousel Item #{{- forloop.index -}}">
+	<img class="d-block w-100"  style="height:100vh; width:auto; object-fit:cover;" src="{{- brick | absolute_url -}}" alt="Carousel Item #{{- forloop.index -}}">
 	</div>  
   {%- endfor -%}
   </div>
