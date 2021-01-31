@@ -11,7 +11,7 @@ Solution:
 <style>
 
 .chulapa-carousel {
-  height: 66vh;
+  height: 75vh;
   object-fit:contain;
 }
 
