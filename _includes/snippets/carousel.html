@@ -18,15 +18,12 @@
   {%- endif -%}
   {% assign id = bricks | join: ""| size %}
   {% if include.indicators %}
-    {% assign id = id | times: 10 %}
+    {% assign id = id | times: 3 %}
   {% endif %}
   {% if include.indicators %}
-    {% assign id = id | times: 100 %}
+    {% assign id = id | times: 7 %}
   {% endif %}
-
-
-{% assign id = "Carousel" | append: id %}
-
+  {% assign id = "Carousel" | append: id %}
 <div id="{{ id }}" class="carousel slide" data-ride="carousel" data-interval="{{- interval -}}">
   {% if include.indicators %}
   <ol class="carousel-indicators">
