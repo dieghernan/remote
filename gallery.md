@@ -4,6 +4,18 @@ permalink: /gallery
 ---
 
 
+Solution:
+
+.d-block.w-100 { height:100vh; width:auto; object-fit:cover; }
+
+<style>
+
+.chulapa-carousel {
+  height: 66vh;
+}
+
+</style>
+
 {% assign externalgallery = "
 https://picsum.photos/seed/10/600/1200,
 https://picsum.photos/seed/20/800/500,
