@@ -13,7 +13,7 @@ Solution:
 .chulapa-carousel {
   height: 66vh;
   width: auto;
-  object-fit:cover;
+  object-fit:scale-down;
 }
 
 </style>
