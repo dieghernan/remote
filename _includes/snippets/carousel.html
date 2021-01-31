@@ -11,7 +11,7 @@
 {%- endif -%}
 {%- assign interval =   include.interval | default: 5000   -%}
 {%- assign end =   include.index_items | default: 100   -%}
-  {% if include.normalizs %}
+  {% if include.normalize %}
     {%- assign norm = "chulapa-carousel" -%}
   {% else %}
     {%- assign norm = "" -%}

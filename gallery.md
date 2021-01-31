@@ -34,12 +34,12 @@ https://via.placeholder.com/2200,
 https://via.placeholder.com/600,
 https://via.placeholder.com/700x500" %}
 
-# External not normalised 
+# External normalised 
 
-{% include_cached snippets/carousel.html indicators="true" controls="true" external=externalgallery %}
+{% include_cached snippets/carousel.html indicators="true" controls="true" normalize="true" external=externalgallery %}
 
 # External normalised
 
-{% include_cached snippets/carousel.html normalize="true" controls="true" external=externalgallery %}
+{% include_cached snippets/carousel.html controls="true" external=externalgallery %}
 
 
