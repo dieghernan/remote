@@ -19,17 +19,17 @@ Solution:
 </style>
 
 {% assign externalgallery = "
-https://via.placeholder.com/600/1200,
+https://via.placeholder.com/600x1200,
 https://via.placeholder.com/130,
-https://via.placeholder.com/800/500,
-https://via.placeholder.com/800/600,
-https://via.placeholder.com/600/800,
-https://via.placeholder.com/900/1200,
-https://via.placeholder.com/900/1300,
-https://via.placeholder.com/750/325,
+https://via.placeholder.com/800x500,
+https://via.placeholder.com/800x600,
+https://via.placeholder.com/600x800,
+https://via.placeholder.com/900x1200,
+https://via.placeholder.com/900x1300,
+https://via.placeholder.com/750/x325,
 https://via.placeholder.com/2200,
 https://via.placeholder.com/600,
-https://via.placeholder.com/700/500" %}
+https://via.placeholder.com/700x500" %}
 
 # External not normalised 
 
