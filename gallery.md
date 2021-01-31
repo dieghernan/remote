@@ -12,8 +12,7 @@ Solution:
 
 .chulapa-carousel {
   height: 66vh;
-  width: auto;
-  object-fit:scale-down;
+  object-fit:contain;
 }
 
 </style>
