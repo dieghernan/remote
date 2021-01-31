@@ -230,7 +230,7 @@ defaults:
           url: /demo
   -
     scope:
-      path: "assets/img/"
+      path: "assets/img"
     values:
       image_col         : gallery
 # XX. Other settings - no need to modify
