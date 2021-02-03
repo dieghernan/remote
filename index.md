@@ -39,10 +39,10 @@ Try change Tango Echo India 2020-01-21
 
 # El Quijote en España
 
-- {{ "now" |  date: "%b %d, %Y %I:%M %p -0500" }}
+- {{ "now" |  date: "%Y-%m-%d %H:%M:%S %Z" }}
 
 
-{{ "now" | date: "%s" | minus : 604800 | date: "%b %d, %Y %I:%M %p -0500" }}
+{{ "now" | date: "%s" | minus : 90 | date: "%Y-%m-%d %H:%M:%S %Z" }}
 
 And an inline code `here see how to get along with this`
 
