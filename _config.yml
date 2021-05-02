@@ -148,7 +148,7 @@ chulapa-skin:
   highlight     :  #default["default"]
   skin         :  academia 
    # Optional predefined skins
-  autothemer    :   # Bool: Use autotheming
+  autothemer    :  true # Bool: Use autotheming
   vars          :
      
     
