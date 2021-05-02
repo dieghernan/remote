@@ -146,13 +146,11 @@ googlefonts:
 # Theme and colors
 chulapa-skin: 
   highlight     :  #default["default"]
-  skin         :   
+  skin         :  academia 
    # Optional predefined skins
-  autothemer    :  true # Bool: Use autotheming
+  autothemer    :   # Bool: Use autotheming
   vars          :
-     font-family-base: "Ibarra Real Nova, serif"
-     primary: "#edc7b7"
-     headings-font-family: chulapa,sans-serif
+     
     
 # D. Jekyll Defaults and collections: see https://jekyllrb.com/
 
