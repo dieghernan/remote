@@ -1,5 +1,7 @@
 remote_theme: dieghernan/chulapa
 
+repository: dieghernan/remote
+
 
 # Find errors on this file with http://www.yamllint.com/
 
