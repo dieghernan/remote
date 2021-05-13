@@ -1,6 +1,8 @@
 remote_theme: dieghernan/chulapa
 
 repository: dieghernan/remote
+url: https://dieghernan.github.io
+baseurl: remote
 
 
 # Find errors on this file with http://www.yamllint.com/
